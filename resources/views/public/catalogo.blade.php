@@ -13,10 +13,10 @@
             <div class="flex justify-start py-10 md:py-16 w-11/12 mx-auto">
                 <div class="text-white font-poppins flex flex-col gap-10 text-center">
                     <h1 class="font-semibold text-[32px] md:text-[48px] leading-none md:leading-tight">
-                        Diseño Innovador
+                        Armo tu proyecto con Deco Tab
                     </h1>
                     <p class="font-normal text-[16px] md:text-[18px]">
-                        Explora diseños innovadores que agregan estilo y personalidad a cualquier ambiente. Desde patrones únicos hasta acabados modernos, nuestros productos están diseñados para destacar y complementar tu decoración.
+                        Descubre la variedad de productos que tenemos para ti. Contamos con la mejor calidad en Wall Panel, Paneles de Piedra Cincelada, UV Mármol y más. ¡Te ayudaremos a crear un entorno más acogedor y confortable!
                     </p>
                 </div>
             </div>
@@ -164,7 +164,7 @@
 
 
                     <p class="font-normal text-[18px]">
-                        Descubre una amplia gama de pisos, tableros y paneles para satisfacer todos tus gustos y necesidades. Desde elegantes pisos laminados hasta tableros de madera de alta calidad, tenemos todo lo que necesitas para transformar cualquier espacio.
+                        En Deco Tab, somos especialistas en Wall Panel, ´mármol UV y piedra PU. Revisa las mejores imágenes y precios de estos productos que son la mejor opción para decorar tus ambientes.
                     </p>
                 </div>
 

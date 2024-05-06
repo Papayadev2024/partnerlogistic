@@ -31,9 +31,9 @@
                                             class="font-semibold text-[32px] md:text-[48px] leading-none md:leading-tight pt-16">
                                             {{ $item->title }}
                                         </h1>
-                                        <p class="font-normal text-[16px] md:text-[18px]">
+                                        <h2 class="font-normal text-[16px] md:text-[18px]">
                                             {{ $item->description }}
-                                        </p>
+                                        </h2>
 
                                         <div class="flex flex-col md:flex-row gap-5 md:gap-10 items-center">
                                             @if (!empty($item->botontext1) && !empty($item->link1))
@@ -76,9 +76,9 @@
                             </svg>
                         </div>
                         <div class="font-poppins text-center md:text-left">
-                            <h3 class="text-white group-hover:text-colorTextBlack font-semibold text-[24px]">
+                            <h2 class="text-white group-hover:text-colorTextBlack font-semibold text-[24px]">
                                 Envío gratis
-                            </h3>
+                            </h2>
                             <p class="text-white group-hover:text-colorTextBlack font-normal text-[16px]">
                                 compras superior a s/200
                             </p>
@@ -99,9 +99,9 @@
                             </svg>
                         </div>
                         <div class="font-poppins text-center md:text-left">
-                            <h3 class="text-white group-hover:text-colorTextBlack font-semibold text-[24px]">
+                            <h2 class="text-white group-hover:text-colorTextBlack font-semibold text-[24px]">
                                 Devolución de dinero
-                            </h3>
+                            </h2>
                             <p class="text-white group-hover:text-colorTextBlack font-normal text-[16px]">
                                 Garantía de 30 días
                             </p>
@@ -119,9 +119,9 @@
                             </svg>
                         </div>
                         <div class="font-poppins text-center md:text-left">
-                            <h3 class="text-white group-hover:text-colorTextBlack font-semibold text-[24px]">
+                            <h2 class="text-white group-hover:text-colorTextBlack font-semibold text-[24px]">
                                 Pagos seguros
-                            </h3>
+                            </h2>
                             <p class="text-white group-hover:text-colorTextBlack font-normal text-[16px]">
                                 Asegurado por...
                             </p>
@@ -139,9 +139,9 @@
                             </svg>
                         </div>
                         <div class="font-poppins text-center md:text-left">
-                            <h3 class="text-white group-hover:text-colorTextBlack font-semibold text-[24px]">
+                            <h2 class="text-white group-hover:text-colorTextBlack font-semibold text-[24px]">
                                 Soporte 24/7
-                            </h3>
+                            </h2>
                             <p class="text-white group-hover:text-colorTextBlack font-normal text-[16px]">
                                 Soporte telefónico y por correo electrónico
                             </p>
@@ -390,9 +390,7 @@
                             Productos destacados
                         </h2>
                         <p class="font-normal text-lg">
-                            Explora nuestra selección destacada: productos de calidad y tendencia que te encantarán.
-                            Descubre lo
-                            mejor de nuestra tienda en línea.
+                            Deco Tab cuenta con paneles de piedra cincelada, UV Mármol, el innovador Wall Panel Mix y la elegante piedra PU. Esta variedad de opciones de diseño y materiales de alta calidad ofrecen una solución versátil y estilizada para transformar cualquier espacio en un ambiente único y sofisticado. Añade un toque de distinción y estilo a tus interiores con nuestra gama de revestimientos de paredes que combinan belleza y durabilidad.
                         </p>
                     </div>
                     <div class="col-span-1 md:col-span-1 order-3 md:order-2 flex justify-center items-center w-full">
@@ -566,12 +564,11 @@
                 <div class="grid grid-cols-1 gap-12 md:gap-0 md:grid-cols-4 grid-rows-1 pt-12 w-11/12 mx-auto">
                     <div class="col-span-1 md:col-span-3 order-1 md:order-1">
                         <h2 class="font-medium text-[40px] mt-2 leading-none md:leading-tight">
-                            Productos en Oferta
+                            Aprovecha las ofertas de Deco Tab
                         </h2>
 
                         <p class="font-normal text-lg basis-3/6">
-                            Descuentos irresistibles en productos seleccionados. ¡Aprovecha nuestras ofertas y ahorra en tus
-                            compras favoritas! ¡No te lo pierdas
+                            ¡No te pierdas las increíbles ofertas de Deco Tab! Renueva tu hogar con estilo y calidad a precios irresistibles. No dejes pasar estas promociones porque tenemos todo lo que necesitas para crear el espacio de tus sueños.
                         </p>
                     </div>
 
@@ -593,7 +590,7 @@
                                         <div class="px-4">
                                             <a
                                                 class="font-semibold text-[8px] md:text-[12px] bg-[#EB5D2C] py-2 px-2 flex-initial w-24 text-center text-white rounded-[5px] absolute top-[18px] z-10">
-                                                En programación
+                                                Nuevo
                                             </a>
                                         </div>
                                         <div>
@@ -659,7 +656,7 @@
                                                     <div class="px-4">
                                                         <a
                                                             class="font-semibold text-[8px] md:text-[12px] bg-[#EB5D2C] py-2 px-2 flex-initial w-32 text-center text-white rounded-[5px] absolute top-[18px] z-10">
-                                                            En programación
+                                                            Nuevo
                                                         </a>
                                                     </div>
                                                     <div>

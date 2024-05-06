@@ -24,15 +24,11 @@
         <section class="w-11/12 mx-auto">
             <div class="font-poppins text-[#151515] flex flex-col gap-16">
                 <div class="md:w-8/12 flex flex-col gap-5">
-                    <h1 class="font-semibold text-[48px] leading-none md:leading-tight">
-                        Quiénes Somos: Nuestra Pasión por la Excelencia y la Innovación
-                    </h1>
+                    <h2 class="font-semibold text-[48px] leading-none md:leading-tight">
+                        Contáctanos para más información
+                    </h2>
                     <p class="font-normal text-[18px]">
-                        "En Decotab, estamos dedicados a ofrecerte lo mejor en tableros, pisos, etc. 
-                        Desde nuestros inicios, nos hemos comprometido con la excelencia, la innovación y la satisfacción del cliente. 
-                        Nuestra pasión por proporcionar productos de alta calidad se refleja en cada paso de nuestro proceso, desde la 
-                        selección de materiales hasta la atención al cliente. Nos enorgullece contar con un equipo dedicado y apasionado 
-                        que trabaja incansablemente para superar tus expectativas en cada interacción. 
+                        Deco Tab se encuentra interesado en ti. Si deseas tener más información sobre nuestros productos y promociones, entonces completa el siguiente formulario para contactarte o ten en cuenta nuestra ubicación, número telefónico y dirección de correo electrónico.
                     </p>
                 </div>
 
