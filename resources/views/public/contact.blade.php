@@ -25,12 +25,14 @@
             <div class="font-poppins text-[#151515] flex flex-col gap-16">
                 <div class="md:w-8/12 flex flex-col gap-5">
                     <h1 class="font-semibold text-[48px] leading-none md:leading-tight">
-                        Vestibulum molestie massa nec est hendrerit, nec commodo nulla
+                        Quiénes Somos: Nuestra Pasión por la Excelencia y la Innovación
                     </h1>
                     <p class="font-normal text-[18px]">
-                        Pellentesque convallis eu tortor id condimentum. Etiam cursus
-                        semper odio non consectetur. Pellentesque et molestie risus.
-                        Aliquam eu nibh pulvinar.
+                        "En Decotab, estamos dedicados a ofrecerte lo mejor en tableros, pisos, etc. 
+                        Desde nuestros inicios, nos hemos comprometido con la excelencia, la innovación y la satisfacción del cliente. 
+                        Nuestra pasión por proporcionar productos de alta calidad se refleja en cada paso de nuestro proceso, desde la 
+                        selección de materiales hasta la atención al cliente. Nos enorgullece contar con un equipo dedicado y apasionado 
+                        que trabaja incansablemente para superar tus expectativas en cada interacción. 
                     </p>
                 </div>
 

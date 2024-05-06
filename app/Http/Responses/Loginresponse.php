@@ -24,7 +24,7 @@ class LoginResponse implements LoginResponseContract
             case 'Customer':
                 return redirect()->intended(config('fortify.home_public'));
             default:
-                return redirect()->route('index');
+                return redirect()->intended(config('fortify.home_public'));
         }
     }
 
