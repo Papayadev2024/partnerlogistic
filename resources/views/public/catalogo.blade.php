@@ -13,7 +13,7 @@
             <div class="flex justify-start py-10 md:py-16 w-11/12 mx-auto">
                 <div class="text-white font-poppins flex flex-col gap-10 text-center">
                     <h1 class="font-semibold text-[32px] md:text-[48px] leading-none md:leading-tight">
-                        Armo tu proyecto con Deco Tab
+                        Armo Tu Proyecto Con Deco Tab
                     </h1>
                     <p class="font-normal text-[16px] md:text-[18px]">
                         Descubre la variedad de productos que tenemos para ti. Contamos con la mejor calidad en Wall Panel, Paneles de Piedra Cincelada, UV Mármol y más. ¡Te ayudaremos a crear un entorno más acogedor y confortable!
@@ -164,7 +164,7 @@
 
 
                     <p class="font-normal text-[18px]">
-                        En Deco Tab, somos especialistas en Wall Panel, ´mármol UV y piedra PU. Revisa las mejores imágenes y precios de estos productos que son la mejor opción para decorar tus ambientes.
+                        En Deco Tab, somos especialistas en <b>Wall Panel</b>, <b>mármol UV</b> y <b>piedra PU</b>. Revisa las mejores imágenes y precios de estos productos que son la mejor opción para decorar tus ambientes.
                     </p>
                 </div>
 
@@ -261,7 +261,7 @@
                             <div class="flex flex-col items-center">
                                 <h2
                                     class="font-semibold text-[40px] text-[#151515] text-center leading-none md:leading-tight">
-                                    Preguntas frecuentes
+                                    Preguntas Frecuentes
                                 </h2>
                             </div>
                             <div class="mx-auto mt-8 grid max-w-[900px] divide-y divide-neutral-200">

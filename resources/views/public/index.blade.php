@@ -387,7 +387,7 @@
                 <div class="grid grid-cols-1 gap-12 md:gap-0 md:grid-cols-4 grid-rows-1 pt-12 w-11/12 mx-auto">
                     <div class="col-span-1 md:col-span-3 order-1 md:order-1 flex flex-col gap-2">
                         <h2 class="font-medium text-[40px] mt-2 leading-none md:leading-tight">
-                            Productos destacados
+                            Productos Destacados
                         </h2>
                         <p class="font-normal text-lg">
                             Deco Tab cuenta con paneles de piedra cincelada, UV Mármol, el innovador Wall Panel Mix y la elegante piedra PU. Esta variedad de opciones de diseño y materiales de alta calidad ofrecen una solución versátil y estilizada para transformar cualquier espacio en un ambiente único y sofisticado. Añade un toque de distinción y estilo a tus interiores con nuestra gama de revestimientos de paredes que combinan belleza y durabilidad.
@@ -564,7 +564,7 @@
                 <div class="grid grid-cols-1 gap-12 md:gap-0 md:grid-cols-4 grid-rows-1 pt-12 w-11/12 mx-auto">
                     <div class="col-span-1 md:col-span-3 order-1 md:order-1">
                         <h2 class="font-medium text-[40px] mt-2 leading-none md:leading-tight">
-                            Aprovecha las ofertas de Deco Tab
+                            Aprovecha Las Ofertas de Deco Tab
                         </h2>
 
                         <p class="font-normal text-lg basis-3/6">
@@ -780,7 +780,7 @@
                             <div class="flex flex-col items-center">
                                 <h2
                                     class="font-semibold text-[40px] text-[#151515] text-center leading-none md:leading-tight">
-                                    Preguntas frecuentes
+                                    Preguntas Frecuentes
                                 </h2>
                             </div>
                             <div class="mx-auto mt-8 grid max-w-[900px] divide-y divide-neutral-200">

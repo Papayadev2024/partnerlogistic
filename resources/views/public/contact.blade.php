@@ -25,7 +25,7 @@
             <div class="font-poppins text-[#151515] flex flex-col gap-16">
                 <div class="md:w-8/12 flex flex-col gap-5">
                     <h2 class="font-semibold text-[48px] leading-none md:leading-tight">
-                        Contáctanos para más información
+                        Contáctanos Para Más Información
                     </h2>
                     <p class="font-normal text-[18px]">
                         Deco Tab se encuentra interesado en ti. Si deseas tener más información sobre nuestros productos y promociones, entonces completa el siguiente formulario para contactarte o ten en cuenta nuestra ubicación, número telefónico y dirección de correo electrónico.
@@ -39,7 +39,7 @@
                     <div class="bg-[#F3F5F7] p-4 md:p-24">
                         <div class="flex flex-col justify-center items-start h-full gap-8">
                             <h2 class="font-medium text-[40px] leading-none md:leading-tight">
-                                Sobre nosotros
+                                Sobre Nosotros
                             </h2>
 
                             <div class="flex flex-col gap-5 font-normal text-[16px]">
