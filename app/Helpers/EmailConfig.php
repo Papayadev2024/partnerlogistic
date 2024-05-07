@@ -13,8 +13,8 @@ class EmailConfig
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'hola@mundoweb.pe';
-        $mail->Password = 'rzhfwaxrddnppppr';
+        $mail->Username = 'diegomartinez1996x@gmail.com';
+        $mail->Password = 'piqutsbcfdzsrnkp';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
         // $mail->Subject = '' . $name . ', '.$mensaje. '';
