@@ -17,7 +17,8 @@ class EmailConfig
         $mail->Password = 'rzhfwaxrddnppppr';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
-        $mail->Subject = 'Notificación de informacion Recibida';
+        // $mail->Subject = '' . $name . ', '.$mensaje. '';
+        $mail->Subject = 'asdasas';
         $mail->CharSet = 'UTF-8';
         $mail->setFrom('info@decotab.com', 'Decotab');
         return $mail;
