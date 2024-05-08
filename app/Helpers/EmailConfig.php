@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 class EmailConfig
 {
-    static  function config(): PHPMailer
+    static  function config($name, $mensaje): PHPMailer
     {
         $mail = new PHPMailer(true);
         // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
