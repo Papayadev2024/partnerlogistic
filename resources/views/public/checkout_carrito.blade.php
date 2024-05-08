@@ -91,10 +91,10 @@
                 class="text-white bg-[#74A68D] w-full py-4 rounded-3xl cursor-pointer font-semibold text-[16px] inline-block text-center">Siguiente</a>
 
               <!-- <input
-                                                                                                          type="submit"
-                                                                                                          value="Siguiente"
-                                                                                                          class="text-white bg-[#74A68D] w-full py-4 rounded-3xl cursor-pointer font-semibold text-[16px] inline-block text-center"
-                                                                                                        /> -->
+                                                                                                            type="submit"
+                                                                                                            value="Siguiente"
+                                                                                                            class="text-white bg-[#74A68D] w-full py-4 rounded-3xl cursor-pointer font-semibold text-[16px] inline-block text-center"
+                                                                                                          /> -->
             </div>
           </div>
         </div>
@@ -265,6 +265,7 @@
 
       });
 
+      mostrarTotalItems()
       calcularTotal()
     }
 

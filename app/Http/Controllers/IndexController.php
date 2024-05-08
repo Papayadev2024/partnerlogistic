@@ -42,6 +42,7 @@ class IndexController extends Controller
   public function index()
   {
     // $productos = Products::all();
+    $url_env = $_ENV['APP_URL'];
     $productos =  Products::with('tags')->get();
     $categorias = Category::all();
     $destacados = Products::where('destacar', '=', 1)->where('status', '=', 1)
@@ -58,7 +59,7 @@ class IndexController extends Controller
 
 
 
-    return view('public.index', compact('productos', 'destacados', 'descuentos', 'general', 'benefit', 'faqs', 'testimonie', 'slider', 'categorias', 'category'));
+    return view('public.index', compact('url_env','productos', 'destacados', 'descuentos', 'general', 'benefit', 'faqs', 'testimonie', 'slider', 'categorias', 'category'));
   }
 
   public function catalogo($filtro, Request $request)
@@ -68,6 +69,8 @@ class IndexController extends Controller
 
     $rangefrom = $request->query('rangefrom');
     $rangeto = $request->query('rangeto');
+    $url_env = $_ENV['APP_URL'];
+    
 
 
 
@@ -128,7 +131,7 @@ class IndexController extends Controller
 
 
 
-      return view('public.catalogo', compact('general', 'faqs', 'categorias', 'testimonie', 'filtro', 'productos', 'categoria', 'rangefrom', 'rangeto'));
+      return view('public.catalogo', compact('url_env','general', 'faqs', 'categorias', 'testimonie', 'filtro', 'productos', 'categoria', 'rangefrom', 'rangeto'));
     } catch (\Throwable $th) {
     }
   }
@@ -137,7 +140,8 @@ class IndexController extends Controller
   {
     $comentarios = Testimony::where('status', '=' ,1)->where('visible', '=' ,1)->paginate(15);
     $contarcomentarios = count($comentarios);
-    return view('public.comentario', compact('comentarios', 'contarcomentarios'));
+    $url_env = $_ENV['APP_URL'];
+    return view('public.comentario', compact('comentarios', 'contarcomentarios', 'url_env'));
   }
 
   public function hacerComentario(Request $request){
@@ -173,7 +177,8 @@ class IndexController extends Controller
   public function contacto()
   {
     $general = General::all();
-    return view('public.contact', compact('general'));
+    $url_env = $_ENV['APP_URL'];
+    return view('public.contact', compact('general','url_env'));
   }
 
   public function carrito()
