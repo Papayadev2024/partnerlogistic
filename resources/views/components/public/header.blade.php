@@ -14,7 +14,7 @@
                 <a href="/" class="">Home</a>
             </li>
             <li>
-                <a href="{{ route('catalogo', 0) }}" class="r">Catálogo</a>
+                <a href="{{ route('catalogo', 0) }}" class="">Catálogo</a>
             </li>
             <li>
                 <a href="{{ route('contacto') }}" class="">Contacto</a>
@@ -35,15 +35,15 @@
         </button>
 
     </div>
-
-    <div class="bg-colorBackgroundHeader">
-        <div class="flex justify-center md:justify-end gap-5 w-11/12 mx-auto py-4">
-            <div class="text-white font-normal font-poppins text-[14px] text-center w-full">
-                <p>Pellentesque convallis eu tortor id condimentum</p>
+    @foreach ($datosgenerales as $item)
+        <div class="bg-colorBackgroundHeader">
+            <div class="flex justify-center md:justify-end gap-5 w-11/12 mx-auto py-4">
+                <div class="text-white font-normal font-poppins text-[14px] text-center w-full">
+                    {{ $item->htop }}
+                </div>
             </div>
         </div>
-    </div>
-
+    @endforeach
     <div>
         <div class="flex justify-between items-center w-11/12 mx-auto my-5">
             <div class="hidden md:block">

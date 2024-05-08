@@ -188,9 +188,12 @@ class IndexController extends Controller
     //
     $detalleUsuario = [];
     $user = auth()->user();
-    if (!isNull($user)) {
-      $detalleUsuario = UserDetails::where('email', $user->email)->get();
+    
+    if (!is_null($user)) {
+      $detalleUsuario = UserDetails::where('email', $user->email)->get();  
     }
+    
+    
     $distritos  = DB::select('select * from districts where active = ? order by 3', [1]);
     $provincias = DB::select('select * from provinces where active = ? order by 3', [1]);
     $departamento = DB::select('select * from departments where active = ? order by 2', [1]);

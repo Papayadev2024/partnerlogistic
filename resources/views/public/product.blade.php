@@ -38,8 +38,10 @@
                             </div>
                         </div>
                         @foreach ($productosConGalerias as $galeria)
-                            <div class="flex justify-center items-center rounded-2xl object-cover bg-cover" style="background-image: url('{{ asset($galeria->imagen) }}')">
-                                <img src="{{ asset($galeria->imagen) }}" alt="piso_flotante_laminado_2" class="w-full object-cover bg-cover rounded-2xl"/>
+                            <div class="flex justify-center items-center rounded-2xl object-cover bg-cover"
+                                style="background-image: url('{{ asset($galeria->imagen) }}')">
+                                <img src="{{ asset($galeria->imagen) }}" alt="piso_flotante_laminado_2"
+                                    class="w-full object-cover bg-cover rounded-2xl" />
                             </div>
                         @endforeach
 
@@ -128,10 +130,10 @@
                 <div class="border-b-[1px] border-gray-300 flex flex-col gap-5">
                     <div class="flex flex-col gap-5">
                         <!-- @foreach ($especificaciones as $item)
-                            <p class="font-semibold text-[16px] text-[#6C7275]">{{ capitalizeFirstLetter($item->tittle) }}
-                            </p>
-                            <p class="font-normal text-[20px]">{{ capitalizeFirstLetter($item->specifications) }}</p>
-                        @endforeach -->
+    <p class="font-semibold text-[16px] text-[#6C7275]">{{ capitalizeFirstLetter($item->tittle) }}
+                                                </p>
+                                                <p class="font-normal text-[20px]">{{ capitalizeFirstLetter($item->specifications) }}</p>
+    @endforeach -->
                         <table class="border-collapse w-full">
                             <tbody>
                                 @foreach ($especificaciones as $item)
@@ -160,171 +162,167 @@
                     </div>
 
                     <div class="flex flex-col gap-5 mt-3">
-                        <!-- <p class="font-semibold text-[16px] text-[#6C7275]">
-              Elige color >
-            </p> -->
+                        {{-- <p class="font-semibold text-[16px] text-[#6C7275]">Elige color</p>  --}}
 
                         <div class="md:col-span-5">
-                            <!-- <p class="text-xl font-bold tracking-tight text-gray-900">Atributos</p> -->
+                            {{-- <p class="text-xl font-bold tracking-tight text-gray-900">Atributos</p>  --}}
                             <div class="flex gap-2 mt-2 relative mb-2 ">
-                                <!-- @foreach ($atributos as $item)
-                                    <div href="#" class="w-full block px-0 py-3">
-                                        <h5 class="text-xl font-bold tracking-tight text-gray-900">
-                                            {{ $item->titulo }}
-                                        </h5>
-                                       
+                                {{-- @foreach ($atributos as $item)
+                                        <div href="#" class="w-full block px-0 py-3">
+                                            <h5 class="text-xl font-bold tracking-tight text-gray-900">
+                                                {{ $item->titulo }}
+                                            </h5>
+                                           
 
-                                        @foreach ($valorAtributo as $value)
-                                            @if ($value->attribute_id == $item->id)
+                                            @foreach ($valorAtributo as $value)
+                                                @if ($value->attribute_id == $item->id)
                                                 @php
                                                     $atributesArray = json_decode($productos[0]->atributes, true);
                                                     $titulo = strtolower($item->titulo);
                                                     $valor = strtolower($value->valor);
                                                 @endphp
-                                                <div class="flex items-center mb-2">
-                                                    <svg class="w-4 h-4" viewBox="0 0 20 20">
-                                                        <circle cx="10" cy="10" r="8"
-                                                            fill="{{ $valor }}"></circle>
-                                                    </svg>
-                                                    <label class="ml-2">{{ $valor }}</label>
-                                                </div>
-                                            @endif
-                                        @endforeach
-                                    </div>
-                                @endforeach -->
-                                <!-- <p class="font-normal text-gray-700 dark:text-gray-400">{{ $item->descripcion }}</p> -->
-                                <!-- @foreach ($valorAtributo as $value)
-                                            @if ($value->attribute_id == $item->id)
-                                                @php
-                                                    $atributesArray = json_decode($productos[0]->atributes, true);
-                                                    $titulo = strtolower($item->titulo);
-                                                    $valor = strtolower($value->valor);
-                                                @endphp
-                                                <div class="flex items-center mb-2">
-                                                    <input type="checkbox" id="{{ $titulo }}:{{ $valor }}"
-                                                        name="{{ $titulo }}:{{ $valor }}"
-                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 "
-                                                        @if (is_array($atributesArray) && isset($atributesArray[$titulo]) && in_array(strtolower($valor), $atributesArray[$titulo])) checked @endif disabled>
-                                                    <label for="{{ $titulo }}:{{ $valor }}"
-                                                        class="ml-2">{{ $valor }}</label>
-                                                </div>
-                                            @endif
-                                  @endforeach -->
+                                                    <div class="flex items-center mb-2">
+                                                        <svg class="w-4 h-4" viewBox="0 0 20 20">
+                                                            <circle cx="10" cy="10" r="8"
+                                                                fill="{{ $valor }}"></circle>
+                                                        </svg>
+                                                        <label class="ml-2">{{ $valor }}</label>
+                                                    </div>
+                                                @endif
+                                                @endforeach
+                                                                                    </div>
+                                        @endforeach  --}}
+                                        {{-- <p class="font-normal text-gray-700 dark:text-gray-400">{{ $item->descripcion }}</p>  --}}
+                                        
+                                        {{-- @foreach ($valorAtributo as $value)
+                                                    @if ($value->attribute_id == $item->id)
+                                                    @php
+                                                        $atributesArray = json_decode($productos[0]->atributes, true);
+                                                        $titulo = strtolower($item->titulo);
+                                                        $valor = strtolower($value->valor);
+                                                    @endphp
+                                                    <div class="flex items-center mb-2">
+                                                        <input type="checkbox" id="{{ $titulo }}:{{ $valor }}"
+                                                            name="{{ $titulo }}:{{ $valor }}"
+                                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 "
+                                                            @if (is_array($atributesArray) && isset($atributesArray[$titulo]) && in_array(strtolower($valor), $atributesArray[$titulo])) checked @endif disabled>
+                                                        <label for="{{ $titulo }}:{{ $valor }}"
+                                                            class="ml-2">{{ $valor }}</label>
+                                                    </div>
+                                                    @endif
+                                            @endforeach  --}}
 
 
                                 <table class="border-collapse w-full">
                                     <tbody>
-                                        
+
                                         @foreach ($atributos as $atributo)
-                                           
-                                                <tr>
-                                                    <td class="w-1/5   px-4 py-2 font-bold text-gray-900">
-                                                        {{ $atributo->titulo }}:</td>
-                                                    <td class="w-4/5   px-4 ">
-                                                        <div class="flex flex-wrap">
-                                                            <!-- @foreach ($valorAtributo as $value)
-                                                            @if ($value->attribute_id == $atributo->id)
+                                            <tr>
+                                                <td class="w-1/5   px-4 py-2 font-bold text-gray-900">
+                                                    {{ $atributo->titulo }}:</td>
+                                                <td class="w-4/5   px-4 ">
+                                                    <div class="flex flex-wrap">
+                                                        {{-- @foreach ($valorAtributo as $value)
+                                                                @if ($value->attribute_id == $atributo->id)
                                                                 @php
                                                                     $valor = strtolower($value->valor);
-                                                                    $color = strtolower($value->color)
+                                                                    $color = strtolower($value->color);
                                                                 @endphp
-                                                                <div class="flex items-center mr-4 ">
-                                                                    <svg class="w-10 h-10" viewBox="0 0 20 20">
-                                                                        <circle cx="10" cy="10" r="8"
-                                                                            fill="{{ $color }}"></circle>
-                                                                    </svg>
-                                                                    <label class="ml-2">{{ $valor }}</label>
-                                                                </div>
+                                                                    <div class="flex items-center mr-4 ">
+                                                                        <svg class="w-10 h-10" viewBox="0 0 20 20">
+                                                                            <circle cx="10" cy="10" r="8"
+                                                                                fill="{{ $color }}"></circle>
+                                                                        </svg>
+                                                                        <label class="ml-2">{{ $valor }}</label>
+                                                                    </div>
+                                                                @endif
+                                                            @endforeach  --}}
+
+                                                        @foreach ($valorAtributo as $value)
+                                                            @if ($value->attribute_id == $atributo->id)
+                                                                @php
+                                                                    $atributesArray = json_decode(
+                                                                        $productos[0]->atributes,
+                                                                        true,
+                                                                    );
+                                                                    $titulo = strtolower($atributo->titulo);
+                                                                    $valor = strtolower($value->valor);
+                                                                    $color = strtolower($value->color);
+                                                                @endphp
+
+                                                                @if (is_array($atributesArray) &&
+                                                                        isset($atributesArray[$titulo]) &&
+                                                                        in_array(strtolower($valor), $atributesArray[$titulo]))
+                                                                    <div class="flex items-center mb-2">
+                                                                        <div disabled
+                                                                            id="{{ $titulo }}:{{ $valor }}"
+                                                                            name="{{ $titulo }}:{{ $valor }}"
+                                                                            class="w-8 h-8 rounded-full"
+                                                                            @if (is_array($atributesArray) &&
+                                                                                    isset($atributesArray[$titulo]) &&
+                                                                                    in_array(strtolower($valor), $atributesArray[$titulo])) style="background:{{ $color }}" @endif>
+                                                                        </div>
+                                                                        {{-- <label
+                                                                                        for="{{ $titulo }}:{{ $valor }}"
+                                                                                        class="ml-2">{{ $valor }}</label>  --}}
+                                                                    </div>
+                                                                @endif
                                                             @endif
-                                                        @endforeach -->
-                                                           
-                                                                @foreach ($valorAtributo as $value)
-                                                                    @if ($value->attribute_id == $atributo->id)
-                                                                        @php
-                                                                            $atributesArray = json_decode(
-                                                                                $productos[0]->atributes,
-                                                                                true,
-                                                                            );
-                                                                            $titulo = strtolower($atributo->titulo);
-                                                                            $valor = strtolower($value->valor);
-                                                                            $color = strtolower($value->color);
-                                                                        @endphp
-                                                                        
-                                                                        @if (is_array($atributesArray) &&
-                                                                                isset($atributesArray[$titulo]) &&
-                                                                                in_array(strtolower($valor), $atributesArray[$titulo]))
-                                                                                
-                                                                            <div class="flex items-center mb-2">
-                                                                                <div disabled
-                                                                                    id="{{ $titulo }}:{{ $valor }}"
-                                                                                    name="{{ $titulo }}:{{ $valor }}"
-                                                                                    class="w-8 h-8 rounded-full"
-                                                                                    @if (is_array($atributesArray) &&
-                                                                                            isset($atributesArray[$titulo]) &&
-                                                                                            in_array(strtolower($valor), $atributesArray[$titulo])) style="background:{{ $color }}" @endif>
-                                                                                </div>
-                                                                                <!-- <label
-                                                                                    for="{{ $titulo }}:{{ $valor }}"
-                                                                                    class="ml-2">{{ $valor }}</label> -->
-                                                                            </div>
-                                                                        @endif
-                                                                    @endif
-                                                                @endforeach
-                                                            
-                                                             
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            
+                                                        @endforeach
+
+
+                                                    </div>
+                                                </td>
+                                            </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
 
                             </div>
                         </div>
-                        <!-- <p class="font-normal text-[20px] text-black">Madera</p>
+                        {{-- <p class="font-normal text-[20px] text-black">Madera</p> --}}
 
-             <div class="grid grid-cols-4 md:grid-cols-6">
-              <div class="circle-container">
-                <div class="circle bg-[#F9CCA7]"></div>
-              </div>
+                        {{-- <div class="grid grid-cols-4 md:grid-cols-6">
+                            <div class="circle-container">
+                                <div class="circle bg-[#F9CCA7]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#EEA752]"></div>
-              </div>
+                            <div class="circle-container">
+                                <div class="circle bg-[#EEA752]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#9C6E43]"></div>
-              </div>
+                            <div class="circle-container">
+                                <div class="circle bg-[#9C6E43]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#9A5E37]"></div>
-              </div>
+                            <div class="circle-container">
+                                <div class="circle bg-[#9A5E37]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#71452F]"></div>
-              </div>
+                            <div class="circle-container">
+                                <div class="circle bg-[#71452F]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#D0834F]"></div>
-              </div>
+                            <div class="circle-container">
+                                <div class="circle bg-[#D0834F]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#A47A5A]"></div>
-              </div>
+                            <div class="circle-container">
+                                <div class="circle bg-[#A47A5A]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#866A59]"></div>
-              </div>
+                            <div class="circle-container">
+                                <div class="circle bg-[#866A59]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#8B7665]"></div>
-              </div>
+                            <div class="circle-container">
+                                <div class="circle bg-[#8B7665]"></div>
+                            </div>
 
-              <div class="circle-container">
-                <div class="circle bg-[#795B4B]"></div>
-              </div>
-            </div> -->
+                            <div class="circle-container">
+                                <div class="circle bg-[#795B4B]"></div>
+                            </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="my-5 flex flex-col gap-5 border-b-[1px] border-gray-300 pb-5">
@@ -382,9 +380,7 @@
                     </h2>
 
                     <p class="font-normal text-lg basis-3/6">
-                        Etiam cursus semper odio non consectetur. Pellentesque et molestie
-                        risus. Aliquam eu nibh pulvinar, sollicitudin sapien vel, aliquam
-                        orci.
+                        Revisa nuestros productos complementarios y sorpréndete con su calidad. ¡Encontrarás lo mejor en Wall Panel en el mercado!
                     </p>
                 </div>
 
@@ -437,17 +433,17 @@
                                             </div>
                                             <div class="my-2 flex flex-col items-start gap-2 basis-1/5 px-2">
                                                 <!-- <div class="flex items-center gap-2">
-                                                <div class="flex gap-2 py-2">
-                                                    <img src="./images/svg/start.svg" alt="estrella" />
-                                                    <img src="./images/svg/start.svg" alt="estrella" />
-                                                    <img src="./images/svg/start.svg" alt="estrella" />
-                                                    <img src="./images/svg/start_sin_color.svg" alt="estrella" />
-                                                    <img src="./images/svg/start_sin_color.svg" alt="estrella" />
-                                                </div>
-                                                <p class="font-semibold text-[14px] text-[#6C7275]">
-                                                    (35)
-                                                </p>
-                                            </div> -->
+                                                                    <div class="flex gap-2 py-2">
+                                                                        <img src="./images/svg/start.svg" alt="estrella" />
+                                                                        <img src="./images/svg/start.svg" alt="estrella" />
+                                                                        <img src="./images/svg/start.svg" alt="estrella" />
+                                                                        <img src="./images/svg/start_sin_color.svg" alt="estrella" />
+                                                                        <img src="./images/svg/start_sin_color.svg" alt="estrella" />
+                                                                    </div>
+                                                                    <p class="font-semibold text-[14px] text-[#6C7275]">
+                                                                        (35)
+    </p>
+                                                                </div> -->
                                                 <h2 class="font-semibold text-[16px] text-[#141718]">
                                                     {{ $item->producto }}
                                                 </h2>

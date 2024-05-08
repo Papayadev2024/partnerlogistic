@@ -30,6 +30,13 @@ class AppServiceProvider extends ServiceProvider
             $view->with('datosgenerales', $datosgenerales);
         });
 
+        View::composer('components.public.header', function ($view) {
+            // Obtener los datos del footer
+            $datosgenerales = General::all(); // Suponiendo que tienes un modelo Footer y un método footerData() en él
+            // Pasar los datos a la vista
+            $view->with('datosgenerales', $datosgenerales);
+        });
+
          PaginationPaginator::useTailwind();   
     }
 }
