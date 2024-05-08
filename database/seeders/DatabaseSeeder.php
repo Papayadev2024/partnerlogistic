@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Strength;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -35,6 +36,8 @@ class DatabaseSeeder extends Seeder
             MessageSeeder::class,
             GeneralSeeder::class,
             CategorySeeder::class,
+            FaqsSeeder::class,
+            BeneficiosSeeder::class
             //ServiceSeeder::class,
         ]);
     }
