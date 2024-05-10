@@ -52,6 +52,8 @@ export default {
                 littleTitle: "24px",
                 middleTitle: "40px",
                 middle: "32px",
+                text12: "12px",
+                text16: "16px",
             },
 
             backgroundColor: {
@@ -81,6 +83,7 @@ export default {
                 "2xs": "370px",
                 sm: "640px",
                 md: "768px",
+                "2md": "980px",
                 lg: "1024px",
                 xl: "1280px",
                 "2xl": "1536px",
@@ -115,6 +118,7 @@ export default {
                 modifySelectors(({ className }) => `.sidebar-expanded .${e(`sidebar-expanded${separator}${className}`)}`);
             });
         }),
+        
       
     ],
 };

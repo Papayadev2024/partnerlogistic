@@ -20,19 +20,19 @@
                     <table id="tabladatos" class="display text-lg" style="width:100%" >
                         <thead>
                             <tr>
+                                <th class="w-32">Imagen</th>
                                 <th>Titulo</th>
-                                <th>Foto</th>
-                                <th>Visible</th>
-                                <th>Acciones</th>
+                                <th class="w-32">Visible</th>
+                                <th class="w-32">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
 
                             @foreach($servicios as $item)
-                                <tr>
-                                    <td>{{$item->title}}</td>
-                                    <td class="px-3 py-2"><img class="w-20" src="{{ asset('storage/images/servicios/'.$item->name_image) }}" alt=""></td>
-                                    <td>
+                                <tr >
+                                    <td class="px-3 py-2 dark:bg-slate-800"><img class="w-20" src="{{ asset('storage/images/servicios/'.$item->name_image) }}" alt=""></td>
+                                    <td class="dark:bg-slate-800">{{$item->title}}</td>
+                                    <td class="dark:bg-slate-800 mx-auto">
                                         <form method="POST" action="">
                                           @csrf
                                             <input type="checkbox" id="hs-basic-usage" class="check_v btn_swithc relative w-[3.25rem] h-7 p-px bg-gray-100 border-transparent text-transparent 
@@ -48,7 +48,7 @@
                                        
 
                                     </td>
-                                    <td class="flex flex-row justify-end items-center gap-5">
+                                    <td class="flex flex-row justify-center items-center gap-5 dark:bg-slate-800">
                                   
                                         <a href="{{ route('servicios.edit', $item->id) }}" class="bg-yellow-400 px-3 py-2 rounded text-white  "><i class="fa-regular fa-pen-to-square"></i></a>
                                         {{-- {{  route('servicios.destroy', $item->id) }} --}}

@@ -23,18 +23,18 @@
                                 <th>Nombre</th>
                                 <th>Ocupación</th>
                                 <th>Testimonio</th>
-                                <th>Visible</th>
-                                <th>Acciones</th>
+                                <th class="w-32">Visible</th>
+                                <th class="w-32">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
 
                             @foreach($testimony as $item)
                                 <tr>
-                                    <td>{{$item->name}}</td>
-                                    <td>{{$item->ocupation}}</td>
-                                    <td>{{$item->testimonie}}</td>
-                                    <td>
+                                    <td class="dark:bg-slate-800">{{$item->name}}</td>
+                                    <td class="dark:bg-slate-800">{{$item->ocupation}}</td>
+                                    <td class="dark:bg-slate-800">{{ Str::limit($item->testimonie, 30) }}</td>
+                                    <td class="dark:bg-slate-800">
                                         <form method="POST" action="">
                                           @csrf
                                             <input type="checkbox" id="hs-basic-usage" class="check_v btn_swithc relative w-[3.25rem] h-7 p-px bg-gray-100 border-transparent text-transparent 
@@ -50,7 +50,7 @@
                                        
 
                                     </td>
-                                    <td class="flex flex-row justify-end items-center gap-5">
+                                    <td class="flex flex-row justify-end items-center gap-5 dark:bg-slate-800">
                                   
                                         <a href="{{ route('testimonios.edit', $item->id) }}" class="bg-yellow-400 px-3 py-2 rounded text-white  "><i class="fa-regular fa-pen-to-square"></i></a>
                                         {{-- {{  route('servicios.destroy', $item->id) }} --}}

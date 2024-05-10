@@ -22,22 +22,19 @@
           <table id="tabladatos" class="display text-lg" style="width:100%">
             <thead>
               <tr>
+                <th class="w-32">Imagen</th>
                 <th>Titulo</th>
                 <th>Descripcion</th>
-                <th>Imagen</th>
-                <th>Acciones</th>
+                <th class="w-32">Acciones</th>
               </tr>
             </thead>
             <tbody>
               @foreach ($logos as $logo)
                 <tr>
-                  <td>{{ $logo->title }}</td>
-                  <td class="truncate w-10">{{ $logo->description }}</td>
-
-
-
-                  <td>{{ $logo->url_image }}</td>
-                  <td>
+                  <td class="dark:bg-slate-800">{{ $logo->url_image }}</td>
+                  <td class="dark:bg-slate-800">{{ $logo->title }}</td>
+                  <td class="dark:bg-slate-800">{{ $logo->description }}</td>
+                  <td class="dark:bg-slate-800">
                     <form action=" " method="POST">
                       @csrf
                       <a data-idService='{{ $logo->id }} ' href=""
@@ -54,9 +51,9 @@
             </tbody>
             <tfoot>
               <tr>
+                <th>Imagen</th>
                 <th>Titulo</th>
                 <th>Descripcion</th>
-                <th>Imagen</th>
                 <th>Acciones</th>
               </tr>
             </tfoot>

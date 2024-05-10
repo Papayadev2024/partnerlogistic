@@ -97,8 +97,10 @@
                 </div>
                 <!-- Badge -->
                 <div class="flex flex-shrink-0 ml-2">
-                  <span
-                    class="inline-flex items-center justify-center h-5 text-xs font-medium text-white bg-indigo-500 px-2 rounded">4</span>
+                  @if ($mensajes !== 0)
+                    <span
+                      class="inline-flex items-center justify-center h-5 text-xs font-medium text-white bg-indigo-500 px-2 rounded">{{ $mensajes }}</span>
+                  @endif
                 </div>
               </div>
             </a>

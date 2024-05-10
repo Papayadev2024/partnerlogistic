@@ -16,7 +16,7 @@ class MessageController extends Controller
     public function index()
     {
         //
-        $mensajes = Message::all();
+        $mensajes = Message::where('status' , '=', 1 )->orderBy('created_at', 'DESC')->get();
         return view('pages.message.index', compact('mensajes'));
     
         
@@ -89,5 +89,16 @@ class MessageController extends Controller
     public function destroy(Message $message)
     {
         //
+    }
+
+    public function borrar(Request $request)
+    {
+
+        $mensaje = Message::find($request->id);
+        $mensaje->status = 0; 
+        $mensaje->save();
+
+        return response()->json(['success' => true]);
+
     }
 }
