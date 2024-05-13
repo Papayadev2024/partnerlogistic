@@ -848,10 +848,9 @@
 
 
 @section('scripts_importados')
+  
   <script>
     $(document).ready(function() {
-
-
       function capitalizeFirstLetter(string) {
         string = string.toLowerCase()
         return string.charAt(0).toUpperCase() + string.slice(1);
@@ -865,7 +864,6 @@
         $('#cantidadSpan span').text(cantidad)
       }
 
-
     })
     // cantidadSpan
     $('#aumentar').on('click', function() {
@@ -876,6 +874,7 @@
 
     })
   </script>
+
   <script>
     let articulosCarrito = [];
 

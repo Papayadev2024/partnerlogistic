@@ -3,7 +3,7 @@ const bag = document.querySelector(".bag");
 const bodyModalCarrito = document.querySelector(".body");
 let isMenuOpen = false; // Variable para controlar el estado del menú
 const card = document.querySelector(".cartContainer");
-checkbox.addEventListener("click", checkboxOnClick);
+// checkbox.addEventListener("click", checkboxOnClick);
 
 // Agregar event listener al checkbox para controlar el estado del menú
 // function checkboxOnClick() {
