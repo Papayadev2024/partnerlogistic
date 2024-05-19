@@ -31,7 +31,7 @@
             <tbody>
               @foreach ($logos as $logo)
                 <tr>
-                  <td class="dark:bg-slate-800">{{ $logo->url_image }}</td>
+                  <td class="dark:bg-slate-800"> <img src="{{ asset($logo->url_image) }}"></td>
                   <td class="dark:bg-slate-800">{{ $logo->title }}</td>
                   <td class="dark:bg-slate-800">{{ $logo->description }}</td>
                   <td class="dark:bg-slate-800">
@@ -117,7 +117,7 @@
         ]
         });
 
-      $(".btn_delete").on("click", function(e) {
+        $('#tabladatos').on('click', '.btn_delete', function(e) {
         e.preventDefault()
 
         let id = $(this).attr('data-idService');

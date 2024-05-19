@@ -1,20 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 
 /* Additional styles */
-@import 'additional-styles/utility-patterns.css';
-@import 'additional-styles/flatpickr.css';
+@import "additional-styles/utility-patterns.css";
+@import "additional-styles/flatpickr.css";
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
 
-
-@layer components{
-
-    #tabladatos_wrapper .dt-length select{
+@layer components {
+    #tabladatos_wrapper .dt-length select {
         @apply px-5;
     }
-  
 }
 
+/* --- hamburguesa ---- */
 
+.hamburguesa {
+    @apply w-10 h-10 rounded-lg cursor-pointer;
+}
+.menu:checked ~ label p:nth-child(2) {
+    @apply hidden;
+}
+
+.menu:checked ~ label p:nth-child(1) {
+    @apply -rotate-45 translate-y-[3px];
+}
+.menu:checked ~ label p:nth-child(3) {
+    @apply rotate-45 -translate-y-[5px];
+}
+
+@layer utilities {
+    .clip-circle-0 {
+        clip-path: circle(0% at top right);
+    }
+
+    .clip-circle-full {
+        clip-path: circle(150% at top right);
+    }
+}
+
+/* .main {
+    @apply bg-fondoMobile md:bg-fondoDesktop ;
+} */
+
+.scroll_servicios::-webkit-scrollbar {
+    @apply w-10;
+}
+
+/* --- ajax -- */
+li.active p {
+    @apply text-white bg-[#289a7b];
+}
+
+.section-content.active {
+    @apply block;
+}
+
+/* ------ dropdown formulario --- */
+
+.dropdown {
+    @apply relative border-b-[1.5px] border-white;
+}
+.input-box {
+    @apply w-full h-[15px]  outline-none cursor-pointer flex items-center flex-row-reverse justify-between relative;
+}
+
+.input-box::before {
+    @apply content-[''] block w-[15px] h-[15px] bg-cover bg-no-repeat bg-center;
+}
+.list {
+    @apply relative top-[100%] left-0 w-full bg-white flex items-center justify-between flex-col max-h-0 transition-all duration-200 ease-out mt-5;
+}
+
+.list input {
+    @apply hidden;
+}
+.list label {
+    @apply flex w-full items-center justify-start py-[10px] px-[15px] box-border cursor-pointer relative;
+}
+
+.list label:hover {
+    @apply bg-[#E3ECEA];
+}
+
+input:checked + .typeServicios {
+    @apply text-[#15614C] bg-[#E3ECEA] font-archivo font-semibold;
+}
+
+input:checked + .typeServiciosContacto {
+    @apply text-[#2E67A4] bg-[#E3ECEA] font-archivo font-semibold;
+}
+.open {
+    @apply outline-none;
+}
+
+.scroll-typeServicios::-webkit-scrollbar,
+.scroll-typeServiciosContacto::-webkit-scrollbar {
+    @apply w-[5px] bg-[#f1f1f1] rounded-[16px];
+}
+
+.scroll-typeServicios::-webkit-scrollbar-thumb {
+    @apply bg-[#15614C] rounded-[16px];
+}
+
+.scroll-typeServiciosContacto::-webkit-scrollbar-thumb {
+    @apply bg-[#2E67A4] rounded-[16px];
+}

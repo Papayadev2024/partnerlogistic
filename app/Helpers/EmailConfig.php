@@ -13,13 +13,13 @@ class EmailConfig
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'diegomartinez1996x@gmail.com';
-        $mail->Password = 'piqutsbcfdzsrnkp';
+        $mail->Username = 'info.fit2finance@gmail.com';
+        $mail->Password = 'nurrvdyuziaxdubv';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
         $mail->Subject = '' . $name . ', '.$mensaje. '';
         $mail->CharSet = 'UTF-8';
-        $mail->setFrom('info@decotab.com', 'Decotab');
+        $mail->setFrom('info.fit2finance@gmail.com', 'Decotab');
         return $mail;
     }
 }

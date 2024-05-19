@@ -50,25 +50,28 @@ use App\Models\AboutUs;
 /* Las rutas publicas */
 Route::get('/', [IndexController::class, 'index'] )->name('index');
 Route::get('/nosotros', [IndexController::class, 'nosotros'] )->name('nosotros');
+Route::get('/gestion/{id}', [IndexController::class, 'gestion'] )->name('gestion');
+Route::get('/contacto', [IndexController::class, 'contacto'] )->name('contacto');
+Route::get('/agradecimiento', [IndexController::class, 'agradecimiento'] )->name('agradecimiento');
+Route::post('guardarContacto', [IndexController::class, 'guardarContacto'] )->name('guardarContacto');
+/* Route::get('/nosotros', [IndexController::class, 'nosotros'] )->name('nosotros');
 Route::get('/servicios', [IndexController::class, 'servicios'] )->name('servicios');
 Route::get('/comentario', [IndexController::class, 'comentario'] )->name('comentario');
 Route::post('/comentario/nuevo', [IndexController::class, 'hacerComentario'] )->name('nuevocomentario');
-Route::get('/contacto', [IndexController::class, 'contacto'] )->name('contacto');
+Route::get('/contacto', [IndexController::class, 'contacto'] )->name('contacto'); */
 /* Proceso de pago */
-Route::get('/carrito', [IndexController::class, 'carrito'] )->name('carrito');
+/* Route::get('/carrito', [IndexController::class, 'carrito'] )->name('carrito');
 Route::get('/pago', [IndexController::class, 'pago'] )->name('pago');
 Route::post('/procesar/pago',[IndexController::class, 'procesarPago'])->name('procesar.pago');
-Route::get('/agradecimiento', [IndexController::class, 'agradecimiento'] )->name('agradecimiento');
+Route::get('/agradecimiento', [IndexController::class, 'agradecimiento'] )->name('agradecimiento'); */
 /* Catálogo y producto */
-Route::get('/producto/{id}', [IndexController::class, 'producto'] )->name('producto');
+/* Route::get('/producto/{id}', [IndexController::class, 'producto'] )->name('producto');
 Route::get('/catalogo/{filtro}', [IndexController::class, 'catalogo'] )->name('catalogo');
-Route::post('carrito/buscarProducto', [CarritoController::class, 'buscarProducto'] )->name('carrito.buscarProducto');
+Route::post('carrito/buscarProducto', [CarritoController::class, 'buscarProducto'] )->name('carrito.buscarProducto'); */
 /* Página 404 */
-Route::get('/404', [IndexController::class, 'error'] )->name('error');
+/* Route::get('/404', [IndexController::class, 'error'] )->name('error'); */
 /* Formulario de contacto */
-Route::post('guardarContactos', [IndexController::class, 'guardarContacto'] )->name('guardarContactos');
-
-
+/* Route::post('guardarContactos', [IndexController::class, 'guardarContacto'] )->name('guardarContactos'); */
 
 
 Route::middleware(['auth:sanctum', 'verified', 'can:Admin'])->group(function () {

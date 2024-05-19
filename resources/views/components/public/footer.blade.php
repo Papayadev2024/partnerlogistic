@@ -1,95 +1,77 @@
-<footer class="font-poppins bg-[#21201E] text-white mt-12 pb-10">
-    <div class="flex flex-col gap-10 md:flex-row md:justify-center w-11/12 mx-auto py-16 border-b-2 border-[#6C7275]">
-        <div class="basis-3/6 flex flex-col gap-10">
-            <div>
-                <a href="{{ route('index') }}">
-                    <img src="{{ asset('/images/img/logo_footer_decotab.png') }}" alt="decotab" /></a>
-            </div>
-            <p class="font-medium text-[20px]">
-                Deco Tab es reconocido por la excelente calidad de sus productos, como Wall Panel, mármol UV y piedra
-                PU. La
-                empresa cuenta con un equipo capacitado en la producción de estos materiales que harán de tu espacio más
-                moderno
-                y acogedor. ¿Te encuentras interesado? Contamos con oficinas en Lima y realizamos envíos a nivel
-                nacional.
-            </p>
-            @foreach ($datosgenerales as $item)
-                <div class="flex gap-5">
-
-                    @if ($item->instagram)
-                        <a href="{{ $item->instagram }}" target="_blank"><img
-                                src="{{ asset('/images/svg/instagram.svg') }}" alt="instagram" /></a>
-                    @endif
-
-                    @if ($item->facebook)
-                        <a href="{{ $item->facebook }}" target="_blank"><img
-                                src="{{ asset('/images/svg/facebook.svg') }}" alt="facebook" /></a>
-                    @endif
-
-                    @if ($item->youtube)
-                        <a href="{{ $item->youtube }}" target="_blank"><img src="{{ asset('/images/svg/youtube.svg') }}"
-                                alt="youtube" /></a>
-                    @endif
-                </div>
+<footer class="bg-[#289A7B]">
+    <div
+      class="flex flex-col md:flex-row md:justify-between w-11/12 mx-auto py-10 gap-10"
+    >
+      <div class="flex flex-col gap-5" data-aos="fade-up" data-aos-offset="150">
+        <div class="flex justify-start items-center">
+          <a href="{{route('index')}}"><img src="{{asset('images/svg/image_1.svg')}}" alt="SMO" /></a>
         </div>
 
-        <div class="basis-1/6 flex flex-col gap-5">
-            <h3 class="font-medium text-[16px]">Page</h3>
+        <p
+          class="font-archivo font-normal text-text16 lg:text-text18 text-white w-2/3"
+        >
+          Morbi vitae leo sit amet libero accumsan tempor id vitae neque.
+        </p>
 
-            <a href="/" class="font-normal text-[14px]">Home</a>
-            <a href="{{ route('catalogo', 0) }}" class="font-normal text-[14px]">Catálogo</a>
-            <a href="{{ route('contacto') }}" class="font-normal text-[14px]">Contacto</a>
+        <div class="flex justify-start items-center gap-5" data-aos="fade-up" data-aos-offset="150">
+          @if ($general->instagram != null)
+          <a target="_blank" href="https://{{ $general->instagram }}"> <img src="{{asset('images/svg/image_3.svg')}}" alt="instagram" /></a>
+          @endif
+
+          @if ($general->facebook != null)
+          <a target="_blank" href="https://{{ $general->facebook }}"> <img src="{{asset('images/svg/image_4.svg')}}" alt="facebook" /></a>
+          @endif
+
+          @if ($general->youtube != null)
+          <a target="_blank" href="https://{{ $general->youtube }}"> <img src="{{asset('images/svg/image_5.svg')}}" alt="youtube" /></a>
+          @endif
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:justify-between gap-10">
+        <div class="flex flex-col gap-5 md:gap-8" data-aos="fade-up" data-aos-offset="150">
+          <p
+            class="font-archivo font-medium text-text16 lg:text-text18 text-white"
+          >
+            Navegador
+          </p>
+          <div
+            class="font-normal font-archivo text-text14 lg:text-text16 text-white flex flex-col gap-5"
+          >
+            <a href="{{route('index')}}">Inicio</a>
+            <a href="{{route('nosotros')}}">Nosotros</a>
+            <a href="">Servicios</a>
+            <a href="{{route('contacto')}}">Contacto</a>
+          </div>
         </div>
 
-        <div class="basis-1/6 flex flex-col gap-5">
-            <h3 class="font-medium text-[16px]">Info</h3>
-
-            <a href="#" class="font-normal text-[14px]">Política de envíos</a>
-            <a href="#" class="font-normal text-[14px]">Reembolso de vuelta</a>
-            <a href="#" class="font-normal text-[14px]">Soporte</a>
-            <a href="#" class="font-normal text-[14px]">FAQs</a>
+        <div class="flex flex-col gap-5 md:gap-8" data-aos="fade-up" data-aos-offset="150">
+          <p
+            class="font-archivo font-medium text-text16 lg:text-text18 text-white"
+          >
+            Dirección
+          </p>
+          <div
+            class="font-normal font-archivo text-text14 lg:text-text16 text-white flex flex-col gap-5"
+          >
+            <p>{{$general->address}} - {{$general->inside}} </p>
+            <p>{{$general->district}}, Lima</p>
+            <p>{{$general->country}}</p>
+            <p>{{$general->cellphone}} </p>
+          </div>
         </div>
-
-        <div class="basis-1/6 flex flex-col gap-5">
-
-
-            <h3 class="font-medium text-[16px]">Office</h3>
-            <p class="font-normal text-[14px]">{{ $item->address }}</p>
-            <p class="font-normal text-[14px]">
-                @if ($item->district && $item->city)
-                    {{ $item->district }}, {{ $item->city }}
-                @elseif ($item->district)
-                    {{ $item->district }}
-                @elseif ($item->city)
-                    {{ $item->city }}
-                @endif
-            </p>
-            <p class="font-normal text-[14px]">{{ $item->country }}</p>
-            <p class="font-normal text-[14px]">{{ $item->cellphone }}</p>
-            @endforeach
-        </div>
+      </div>
     </div>
 
-    <div class="mt-5 flex flex-col md:flex-row md:justify-between md:items-center gap-5 w-11/12 mx-auto">
-        <div class="flex flex-col md:flex-row gap-2">
-            <p class="font-normal text-[12px]">
-                Copyright &copy; 2023 Mundo Web. Reservados todos los derechos
-            </p>
-            <p class="hidden md:block">|</p>
-
-            <div class="flex gap-5">
-                <a href="#" class="font-normal text-[12px] text-[#6C7275]">Política de privacidad</a>
-                <a href="#" class="font-normal text-[12px] text-[#6C7275]">Términos y Condiciones</a>
-            </div>
-        </div>
-
-        <div class="flex flex-wrap gap-2 pb-5">
-            <img src="{{ asset('images/svg/visa.svg') }}" alt="visa" />
-            <img src="{{ asset('images/svg/american.svg') }}" alt="american" />
-            <img src="{{ asset('images/svg/mastercad.svg') }}" alt="mastercad" />
-            <img src="{{ asset('images/svg/stripe.svg') }}" alt="stripe" />
-            <img src="{{ asset('images/svg/paypal.svg') }}" alt="paypal" />
-            <img src="{{ asset('images/svg/pay.svg') }}" alt="pay" />
-        </div>
+    <div
+      class="border-t border-[#FFFFFF] pt-5 pb-10 flex flex-col md:flex-row md:justify-start md:items-center text-white gap-2 w-11/12 mx-auto text-text12 lg:text-text14 font-normal" 
+    >
+      <p>Copyright &copy; 2023 Mundo Web. Reservados todos los derechos</p>
+      <p class="hidden md:block">|</p>
+      <div class="flex gap-5 md:gap-2 justify-start items-center">
+        <p>Política de privacidad</p>
+        <p class="hidden md:block">|</p>
+        <p>Términos y condiciones</p>
+      </div>
     </div>
-</footer>
+  </footer>
