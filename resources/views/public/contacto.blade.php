@@ -5,7 +5,6 @@
         .logo_blanco {
             display: block;
         }
-
     </style>
 @stop
 
@@ -21,7 +20,8 @@
         <section class="w-11/12 mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 py-20">
                 <div class="flex flex-col justify-between gap-5 md:gap-44">
-                    <div class="flex flex-col gap-5 w-full md:max-w-[636px] mx-auto" data-aos="fade-up" data-aos-offset="150">
+                    <div class="flex flex-col gap-5 w-full md:max-w-[636px] mx-auto" data-aos="fade-up"
+                        data-aos-offset="150">
                         <h3 class="text-[#2E67A4] font-archivo font-bold text-text48 md:text-text64 leading-none">
                             Nuestros datos de <span class="text-[#289A7B]">contacto</span>
                         </h3>
@@ -133,7 +133,19 @@
                                                         Tipo de servicios
                                                     </label>
                                                 </div>
-                                                <div class="w-full">
+
+                                                @foreach ($servicios as $item)
+                                                    <div class="w-full">
+                                                        <input type="radio" name="service_product"
+                                                            id="radio{{ $item->id }}" class="radio"
+                                                            value="{{ $item->title }}" />
+                                                        <label for="radio{{ $item->id }}"
+                                                            class="text-text16 md:text-text18 text-[#121212] text-opacity-40 typeServicios font-archivo">
+                                                            {{ $item->title }}
+                                                        </label>
+                                                    </div>
+                                                @endforeach
+                                                {{-- <div class="w-full">
                                                     <input type="radio" id="id1" class="radio"
                                                         name="service_product" value="Gestion ISO" />
 
@@ -168,7 +180,7 @@
                                                         class="text-text16 md:text-text18 text-[#121212] text-opacity-40 typeServiciosContacto font-archivo">
                                                         Auditorías
                                                     </label>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                     </div>

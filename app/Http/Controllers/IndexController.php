@@ -75,7 +75,8 @@ class IndexController extends Controller
     public function contacto()
     {
         $general = General::all()->first();
-        return view('public.contacto', compact('general'));
+        $servicios = Service::where('status', 1)->where('visible', 1)->get();
+        return view('public.contacto', compact('general', 'servicios'));
     }
 
     public function micuenta()

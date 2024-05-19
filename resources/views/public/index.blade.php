@@ -518,7 +518,18 @@
                                                     Tipo de servicios
                                                 </label>
                                             </div>
-                                            <div class="w-full">
+
+                                            @foreach ($servicios as $item)
+                                                <div class="w-full">
+                                                    <input type="radio" name="service_product" id="radio{{ $item->id }}" class="radio"
+                                                    value="{{ $item->title }}" />
+                                                    <label for="radio{{ $item->id }}"
+                                                    class="text-text16 md:text-text18 text-[#121212] text-opacity-40 typeServicios font-archivo">
+                                                    {{ $item->title }}
+                                                    </label>
+                                                </div>
+                                            @endforeach
+                                            {{-- <div class="w-full">
                                                 <input type="radio" id="id1" class="radio"
                                                     name="service_product" value="Gestión ISO"/>
 
@@ -553,7 +564,7 @@
                                                     class="text-text16 md:text-text18 text-[#121212] text-opacity-40 typeServicios font-archivo">
                                                     Auditorías
                                                 </label>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
