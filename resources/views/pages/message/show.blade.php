@@ -8,18 +8,23 @@
           </header>
           <div class="p-3">
     
-            <div class="p-6">
+            <div class="px-6 b-6">
     
-              {{-- <p class="font-bold">Telefono:</p>
-              <p> {{ $message->phone }} </p>
-              <br> --}}
-              <p class="font-bold">Correo:</p>
-              <p> {{ $message->email }} </p>
-              <br>
-              <p class="font-bold">Mensaje:</p>
-              <p class="mb-5">
-                {{ $message->message }}
-              </p>
+              <div class="flex flex-col gap-3 pt-5 pb-10">
+                <p>
+                   <span class="font-bold text-[18px]">Nombre:</span> <span class="text-[16px]">{{$message->full_name}}</span>
+                </p>
+                <p>
+                   <span class="font-bold text-[18px]">Teléfono:</span> <span class="text-[16px]">{{$message->phone}}</span>
+                </p>
+                <p>
+                   <span class="font-bold text-[18px]">Correo:</span> <span class="text-[16px]">{{$message->email}}</span>
+                </p>
+
+                <p>
+                    <span class="font-bold text-[18px]">{{$message->full_name}}</span>  esta interesado en tener informes del servicio: <span class="font-bold text-[18px]">{{$message->service_product}}</span> </p>
+
+            </div>
     
               <a href="{{ route('mensajes.index') }}" class="bg-blue-500 px-4 py-2 rounded text-white"><span><i
                     class="fa-solid fa-arrow-left mr-2"></i></span> Volver</a>
