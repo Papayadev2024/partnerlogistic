@@ -32,7 +32,7 @@
                     <h2 class="text-[#289A7B] font-archivo font-semibold text-text20">
                         Nuestra
                         <span class="block text-[#2E67A4] font-archivo font-bold text-text48">
-                            {{-- Misión --}} {{$nosotros->titulo}}
+                           {{-- {{$nosotros->titulo}} --}}
                         </span>
                     </h2>
                 </div>
