@@ -20,29 +20,8 @@
         </svg>
       </button>
       <!-- Logo -->
-      <a class="block" href="{{ route('dashboard') }}">
-        <svg width="32" height="32" viewBox="0 0 32 32">
-          <defs>
-            <linearGradient x1="28.538%" y1="20.229%" x2="100%" y2="108.156%" id="logo-a">
-              <stop stop-color="#A5B4FC" stop-opacity="0" offset="0%" />
-              <stop stop-color="#A5B4FC" offset="100%" />
-            </linearGradient>
-            <linearGradient x1="88.638%" y1="29.267%" x2="22.42%" y2="100%" id="logo-b">
-              <stop stop-color="#38BDF8" stop-opacity="0" offset="0%" />
-              <stop stop-color="#38BDF8" offset="100%" />
-            </linearGradient>
-          </defs>
-          <rect fill="#6366F1" width="32" height="32" rx="16" />
-          <path
-            d="M18.277.16C26.035 1.267 32 7.938 32 16c0 8.837-7.163 16-16 16a15.937 15.937 0 01-10.426-3.863L18.277.161z"
-            fill="#4F46E5" />
-          <path
-            d="M7.404 2.503l18.339 26.19A15.93 15.93 0 0116 32C7.163 32 0 24.837 0 16 0 10.327 2.952 5.344 7.404 2.503z"
-            fill="url(#logo-a)" />
-          <path
-            d="M2.223 24.14L29.777 7.86A15.926 15.926 0 0132 16c0 8.837-7.163 16-16 16-5.864 0-10.991-3.154-13.777-7.86z"
-            fill="url(#logo-b)" />
-        </svg>
+      <a class="block" href="{{ route('mensajes.index') }}">
+        <img src="{{asset('images/img/logosmo.png')}}" class="w-28"/>
       </a>
     </div>
 
@@ -53,7 +32,7 @@
         <h3 class="text-xs uppercase text-slate-500 font-semibold pl-3">
           <span class="hidden lg:block lg:sidebar-expanded:hidden 2xl:hidden text-center w-6"
             aria-hidden="true">•••</span>
-          <span class="lg:hidden lg:sidebar-expanded:block 2xl:block">Decotab - Backend</span>
+          <span class="lg:hidden lg:sidebar-expanded:block 2xl:block">SMO - Backend</span>
         </h3>
         <ul class="mt-3">
 
@@ -149,7 +128,7 @@
 
 
           <!-- Testimony -->
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['testimonios'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['testimonios'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('testimonios.index') }}">
@@ -166,11 +145,11 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Testimonios</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
 
           <!-- Category -->
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['categorias'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['categorias'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('categorias.index') }}">
@@ -187,11 +166,11 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Categoría</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
 
           <!-- Blog -->
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['blog'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['blog'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('blog.index') }}">
@@ -208,7 +187,7 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Blog</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
           <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['logos'])) {{ 'bg-slate-900' }} @endif">
@@ -231,7 +210,7 @@
           </li>
 
 
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['staff'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['staff'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('staff.index') }}">
@@ -248,11 +227,11 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Personal</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
 
 
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['strength'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['strength'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('strength.index') }}">
@@ -269,7 +248,7 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Beneficios</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
 
 
@@ -292,7 +271,8 @@
               </div>
             </a>
           </li>
-          <li
+
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['attributes'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['attributes'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('attributes.index') }}">
@@ -309,8 +289,9 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Atributos</span>
               </div>
             </a>
-          </li>
-          <li
+          </li> --}}
+
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['valoresattributes'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['valoresattributes'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('valoresattributes.index') }}">
@@ -328,9 +309,9 @@
                   Valor de atributo</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['products'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['products'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('products.index') }}">
@@ -347,8 +328,9 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Productos</span>
               </div>
             </a>
-          </li>
-          <li
+          </li> --}}
+
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['tags'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['tags'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('tags.index') }}">
@@ -365,8 +347,9 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Etiquetas</span>
               </div>
             </a>
-          </li>
-          <li
+          </li> --}}
+          
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['faqs'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['faqs'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('faqs.index') }}">
@@ -383,9 +366,9 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Faqs</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['slider'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['slider'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('slider.index') }}">
@@ -402,8 +385,9 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Sliders</span>
               </div>
             </a>
-          </li>
-          <li
+          </li> --}}
+          
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['galerie'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['galerie'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('galerie.index') }}">
@@ -420,7 +404,7 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Galeries</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
 
         </ul>

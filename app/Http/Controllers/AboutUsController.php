@@ -133,13 +133,12 @@ class AboutUsController extends Controller
   {
     $strength = AboutUs::find($request->id);
 
-		
 		if ($strength->imagen && file_exists($strength->imagen)) {
 			unlink($strength->imagen);
 		}
 
 		$strength->delete();
-		return response()->json(['message'=>'Logo eliminado']);
+		return response()->json(['message'=>'Item eliminado']);
   }
 
   public function updateVisible(Request $request)

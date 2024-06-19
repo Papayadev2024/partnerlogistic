@@ -469,8 +469,8 @@
                 <div class="flex flex-col justify-center max-w-[590px] mx-auto gap-10">
                     <div>
                         <h2 class="text-[#2E67A4] font-semibold font-archivo text-text48 lg:text-text50 leading-tight">
-                            Donec ac nisl ut mauris
-                            <span class="text-[#289A7B]">facilisis finibus</span>
+                            Ponte en contacto
+                            <span class="text-[#289A7B]">con nuestros asesores</span>
                         </h2>
                         <p class="font-normal text-text18 lg:text-text20 font-archivo text-[#696969]">
                             Cumplimos con altos estándares internacionales de calidad en

@@ -73,6 +73,9 @@ Route::post('carrito/buscarProducto', [CarritoController::class, 'buscarProducto
 /* Formulario de contacto */
 /* Route::post('guardarContactos', [IndexController::class, 'guardarContacto'] )->name('guardarContactos'); */
 
+Route::get('/register', function () {
+    return redirect('/login');
+});
 
 Route::middleware(['auth:sanctum', 'verified', 'can:Admin'])->group(function () {
 

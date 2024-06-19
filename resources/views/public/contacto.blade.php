@@ -26,9 +26,8 @@
                             Nuestros datos de <span class="text-[#289A7B]">contacto</span>
                         </h3>
                         <p class="text-[#696969] font-archivo font-normal text-text18">
-                            Nullam nec orci dui. Praesent tristique facilisis quam, a
-                            egestas lorem consectetur fringilla. Suspendisse cursus erat
-                            eget ante auctor, non hendrerit ipsum egestas.
+                            Nos encantaría saber de ti. Si tienes alguna pregunta, por favor completa el formulario a 
+                            continuación y nos pondremos en contacto contigo lo antes posible.
                         </p>
                     </div>
 
@@ -90,8 +89,8 @@
                                 Deja tus datos
                             </h3>
                             <p class="text-[#696969] font-normal text-text18 font-archivo">
-                                Donec ac nisl ut mauris facilisis finibus. Nulla sed ultrices
-                                enim, nec consectetur tortor.
+                                Cumplimos con altos estándares internacionales de calidad en
+                                nuestros servicios
                             </p>
                         </div>
                         <form action="" id="formContactosNew" class="flex flex-col gap-5">

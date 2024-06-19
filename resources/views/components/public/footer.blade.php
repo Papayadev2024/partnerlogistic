@@ -10,7 +10,7 @@
         <p
           class="font-archivo font-normal text-text16 lg:text-text18 text-white w-2/3"
         >
-          Morbi vitae leo sit amet libero accumsan tempor id vitae neque.
+        Bienvenido a SMO. Especialistas en Salud Ocupacional y Gestión de Calidad
         </p>
 
         <div class="flex justify-start items-center gap-5" data-aos="fade-up" data-aos-offset="150">
@@ -67,11 +67,6 @@
       class="border-t border-[#FFFFFF] pt-5 pb-10 flex flex-col md:flex-row md:justify-start md:items-center text-white gap-2 w-11/12 mx-auto text-text12 lg:text-text14 font-normal" 
     >
       <p>Copyright &copy; 2023 Mundo Web. Reservados todos los derechos</p>
-      <p class="hidden md:block">|</p>
-      <div class="flex gap-5 md:gap-2 justify-start items-center">
-        <p>Política de privacidad</p>
-        <p class="hidden md:block">|</p>
-        <p>Términos y condiciones</p>
-      </div>
+
     </div>
   </footer>

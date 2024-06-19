@@ -26,7 +26,7 @@
                                 <th>Titulo </th>
                                 <th>Descripcion</th>
                                 <th>Imagen</th>
-                                <th>Status</th>
+                                <th>Visible</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -84,7 +84,7 @@
                                 <th>Titulo </th>
                                 <th>Descripcion</th>
                                 <th>Imagen</th>
-                                <th>Status</th>
+                                <th>Visible</th>
                                 <th>Acciones</th>
                             </tr>
                         </tfoot>

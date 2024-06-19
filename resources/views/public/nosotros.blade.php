@@ -2,24 +2,24 @@
 
 @section('css_importados')
 
-<style>
-    .bg_verde{
-        background-color: #289A7B;
-    }
-
-    .text_verde{
-        color: #289A7B;
-        /* font-weight: 700; */
-    }
-
-    .text_azul{
-        color: #2E67A4;
-    }
-
-    .logo_blanco{
-          display: none;
+    <style>
+        .bg_verde {
+            background-color: #289A7B;
         }
-</style>
+
+        .text_verde {
+            color: #289A7B;
+            /* font-weight: 700; */
+        }
+
+        .text_azul {
+            color: #2E67A4;
+        }
+
+        .logo_blanco {
+            display: none;
+        }
+    </style>
 
 @stop
 
@@ -27,56 +27,32 @@
 @section('content')
     <main>
         <section class="w-11/12 mx-auto flex flex-col gap-10 pt-44">
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="flex flex-col gap-3">
-                    <h2 class="text-[#289A7B] font-archivo font-semibold text-text20">
-                        Nuestra
-                        <span class="block text-[#2E67A4] font-archivo font-bold text-text48">
-                           {{-- {{$nosotros->titulo}} --}}
-                        </span>
-                    </h2>
-                </div>
+            @if (!$nosotros->isEmpty())
+                @foreach ($nosotros as $nosotros)
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="flex flex-col gap-3">
+                            <h2 class="text-[#289A7B] font-archivo font-semibold text-text20">
+                                Nuestra
+                                <span class="block text-[#2E67A4] font-archivo font-bold text-text48">
+                                    {{ $nosotros->titulo }}
+                                </span>
+                            </h2>
+                        </div>
 
-                <div>
-                    <p class="text-[#696969] font-archivo text-text18 font-normal">
-                        {{$nosotros->descripcion}}
-                        {{-- Ser un aliado estratégico de nuestros clientes en los procesos de
-                        implementación, mantenimiento, control y mejoramiento del Sistema
-                        de Gestión de Seguridad y Salud en el Trabajo, cumpliendo con los
-                        requerimientos legales y estándares internacionales. De esta
-                        manera, ayudar a optimizar los procesos de las empresas con el fin
-                        de que les permitan tener una ventaja competitiva y promover el
-                        desarrollo de una cultura de salud y bienestar en la empresa. --}}
-                    </p>
-                </div>
-            </div>
-
-            <div class="flex justify-center items-center w-full">
-                <img src="{{asset($nosotros->imagen)}}" alt="" class="w-full object-cover" />
-               {{--  <img src="./images/img/image_18.png" alt="" class="w-full object-cover hidden md:block" /> --}}
-                {{-- <img src="./images/img/image_19.png" alt="" class="w-full object-cover block md:hidden" /> --}}
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="flex flex-col gap-3">
-                    <h2 class="text-[#289A7B] font-archivo font-semibold text-text20">
-                        Nuestra
-                        <span class="block text-[#2E67A4] font-archivo font-bold text-text48">
-                            Visión 
-                        </span>
-                    </h2>
-                </div>
-
-                <div>
-                    <p class="text-[#696969] font-archivo text-text18 font-normal">
-                        Ser reconocidos a nivel nacional como la empresa líder en
-                        consultoría e implementación, mantenimiento, control y
-                        mejoramiento de sistemas de gestión de seguridad y salud
-                        ocupacional, que se distinga por proporcionar una excelente
-                        calidad de servicios a sus clientes generándoles valor y
-                        sustentabilidad en sus negocios.
-                    </p>
-                </div>
+                        <div>
+                            <p class="text-[#696969] font-archivo text-text18 font-normal">
+                                {{ $nosotros->descripcion }}
+                            </p>
+                        </div>
+                    </div>
+                @endforeach
+            @endif
+            <div class="col-span-2 flex justify-center items-center w-full">
+                {{-- <img src="{{asset($nosotros->imagen)}}" alt="" class="w-full object-cover" /> --}}
+                <img src="{{ asset('images/img/image_18.png') }}" alt=""
+                    class="w-full object-cover hidden md:block h-96" />
+                <img src="{{ asset('images/img/image_19.png') }}" alt=""
+                    class="w-full object-cover block md:hidden " />
             </div>
         </section>
 
@@ -85,9 +61,7 @@
                 <h3 class="text-[#2E67A4] font-archivo text-text48 text-center font-bold">
                     Nuestros objetivos
                 </h3>
-                <p class="text-[#696969] font-archivo text-text18 font-normal text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
@@ -138,7 +112,7 @@
                 </div>
 
                 <div class="flex justify-center items-center">
-                    <img src="{{asset('images/img/image_20.png')}}" alt="" class="w-full object-cover" />
+                    <img src="{{ asset('images/img/image_20.png') }}" alt="" class="w-full object-cover" />
                 </div>
             </div>
         </section>
@@ -151,9 +125,10 @@
                         <span class="text-[#289A7B] block">¿Por Qué Destacamos?</span>
                     </h2>
                     <p class="text-[#696969] font-archivo font-normal text-text18 text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse varius enim in eros elementum tristique. Duis cursus,
-                        mi quis viverra ornare.
+                        Nos dedicamos a proporcionar soluciones integrales y personalizadas que garantizan el bienestar
+                        y la seguridad en tu entorno laboral. Nuestra experiencia y compromiso nos permiten ofrecer
+                        servicios
+                        de la más alta calidad, adaptados a las necesidades específicas de cada cliente.
                     </p>
                 </div>
 
@@ -223,8 +198,8 @@
     </main>
 @section('scripts_importados')
 
-<script>
-     const menu = document.querySelector(".menu");
+    <script>
+        const menu = document.querySelector(".menu");
         const logo_1 = document.querySelector(".logo_1");
         const logo_2 = document.querySelector(".logo_2");
         /* logo_1.classList.add('logo_blanco'); */
@@ -233,7 +208,7 @@
         menu.addEventListener("click", (e) => {
             body.classList.toggle("overflow-hidden");
         });
-</script>
+    </script>
 @stop
 
 @stop
