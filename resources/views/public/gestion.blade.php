@@ -106,9 +106,9 @@
                                                 class="text-[#2E67A4] font-bold font-archivo text-text44 2md:text-text48 leading-tight">
                                                 {{$servicio->title}}
                                             </div>
-                                            <p class="font-normal font-archivo text-text18 text-[#696969]">
+                                            <div class="font-normal font-archivo text-text18 text-[#696969]">
                                                 {!! $servicio->description !!}
-                                            </p>
+                                            </div>
                                         </div>
 
                                         <div class="flex-1">
