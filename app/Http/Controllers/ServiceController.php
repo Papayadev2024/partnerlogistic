@@ -110,6 +110,7 @@ class ServiceController extends Controller
         $service->link = $request->link;
         $service->title = $request->title;
         $service->description = $request->description;
+        $service->second_description = $request->second_description;
         $service->status = 1;
         $service->visible = 1;
 
@@ -147,6 +148,7 @@ class ServiceController extends Controller
         $service = Service::findOrfail($id);
         $service->title = $request->title;
         $service->description = $request->description;
+        $service->second_description = $request->second_description;
         $service->link = $request->link;
        
 

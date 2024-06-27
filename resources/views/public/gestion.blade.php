@@ -67,47 +67,22 @@
                                             <h3 class="text-[#289A7B] font-bold font-archivo text-text20">
                                                 Servicio
                                             </h3>
-                                            <p>{{$servicio->title}} </p>
+                                           
                                             <h2
                                                 class="text-[#2E67A4] font-bold font-archivo text-text44 2md:text-text48 leading-tight">
-                                                Implementación de
-                                                <span class="text-[#289A7B]">Sistema de Gestión</span>
+                                                {{$servicio->title}}
+                                                
                                             </h2>
-                                            <p class="font-normal font-archivo text-text18 text-[#696969]">
-                                                Se presentarán una serie de opciones de acuerdo a lo
-                                                requerido por el Cliente, los cuales los podemos definir
-                                                en los siguientes servicios:
-                                            </p>
+                                            <div class="font-normal font-archivo text-text18 text-[#696969]">
+                                                {!! $servicio->description !!}
+                                            </div>
                                         </div>
 
                                         <div class="flex-1">
                                             <div class="mx-6">
-                                                <ul class="font-normal font-archivo text-text18 text-[#696969] list-disc">
-                                                    <li>
-                                                        Implementación de un sistema para el cumplimiento de
-                                                        la Ley 29783 de Seguridad y Salud en el Trabajo y su
-                                                        reglamento DS 005-2012 TR del Ministerio de Trabajo y
-                                                        Promoción del Empleo y su modificatoria Ley 30222.
-                                                    </li>
-                                                    <li>
-                                                        Implementación del Sistema de Gestión de Seguridad y
-                                                        Salud en el Trabajo según las normas OHSAS
-                                                        18001:2007”.
-                                                    </li>
-                                                    <li>
-                                                        Implementación de Sistemas Integrados de Gestión de
-                                                        Seguridad y Salud en el Trabajo, donde se realizará
-                                                        una evaluación con línea base y diagnóstico específico
-                                                        para el desarrollo del sistema.
-                                                    </li>
-                                                    <li>
-                                                        Elaboración de informes para mostrar el avance del
-                                                        trabajo, donde se mantendrá al cliente informado del
-                                                        desarrollo del proyecto y de las posibles incidencias
-                                                        que se presenten, respetando las fechas de entrega
-                                                        acordadas.
-                                                    </li>
-                                                </ul>
+                                                <div class="font-normal font-archivo text-text18 text-[#696969] list-disc">
+                                                    {!! $servicio->second_description !!}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
