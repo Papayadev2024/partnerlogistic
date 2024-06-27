@@ -96,14 +96,10 @@
                     <h2 class="font-archivo font-bold text-text32 text-[#2E67A4] group-hover:text-white md:duration-300">
                         {{$servicio->title}}
                     </h2>
-                    <p
+                    <div
                         class="text-[#696969] font-archivo font-normal text-text16 md:text-text18 group-hover:text-white md:duration-300">
-                        Priorizamos la salud y el bienestar de sus empleados ofreciendo
-                        servicios completos de salud ocupacional. Desde evaluaciones
-                        médicas hasta programas de prevención de accidentes, nos
-                        aseguramos de que su empresa cumpla con todas las regulaciones y
-                        normativas vigentes.
-                    </p>
+                       {!! $servicio->description !!}
+                    </div>
 
                     <div class="flex justify-center items-center">
                         <a href="{{route('gestion',  $servicio->id)}}"
