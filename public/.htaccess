@@ -4,6 +4,7 @@
     </IfModule>
 
     <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "https://smoconsultores.com/"
         Header set Access-Control-Allow-Origin "https://www.smoconsultores.com/"
     </IfModule>
     
