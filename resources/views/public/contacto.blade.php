@@ -57,8 +57,7 @@
                                 <p class="text-[#696969] font-archivo text-text16 font-normal">
                                     {{-- Av. Antonio Miroquesada 457, Ofic. 1301 - Magdalena del Mar,
                                     Lima - Perú (Ex Av.Juan de Aliaga) --}}
-                                    {{ $general->address }}, {{ $general->inside }}, Lima - {{ $general->country }} (Ex
-                                    Av.Juan de Aliaga)
+                                    {{ $general->address }} - {{ $general->inside }} - {{ $general->country }}
                                 </p>
                             </div>
                         </div>
