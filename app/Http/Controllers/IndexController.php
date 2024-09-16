@@ -326,37 +326,6 @@ class IndexController extends Controller
                         </tr>
                         <tr>
                           <td>
-                            <a
-                              href="https://web.facebook.com/"
-                              target="_blank"
-                              style="padding: 0 5px 30px 0; display: inline-block"
-                            >
-                              <img src="' . $baseUrl . '/facebook.png" alt="Facebook"
-                            /></a>
-              
-                            <a
-                              href="https://www.instagram.com/"
-                              target="_blank"
-                              style="padding: 0 5px 30px 0; display: inline-block"
-                            >
-                              <img src="' . $baseUrl . '/instagram.png" alt="Instagram"
-                            /></a>
-              
-                            <a
-                              href="https://www.linkedin.com/company/"
-                              target="_blank"
-                              style="padding: 0 5px 30px 0; display: inline-block"
-                            >
-                              <img src="' . $baseUrl . '/linkedin.png" alt="LinkedIn"
-                            /></a>
-              
-                            <a
-                              href="https://www.youtube.com/"
-                              target="_blank"
-                              style="padding: 0 5px 30px 0; display: inline-block"
-                            >
-                              <img src="' . $baseUrl . '/youtube.png" alt="YouTube"
-                            /></a>
                           </td>
                         </tr>
                       </tbody>
@@ -502,37 +471,6 @@ class IndexController extends Controller
                         </tr>
                         <tr>
                          <td>
-                            // <a
-                            //   href="https://web.facebook.com/"
-                            //   target="_blank"
-                            //   style="padding: 0 5px 30px 0; display: inline-block"
-                            // >
-                            //   <img src="' . $baseUrl . '/facebook.png" alt="Facebook"
-                            // /></a>
-              
-                            // <a
-                            //   href="https://www.instagram.com/"
-                            //   target="_blank"
-                            //   style="padding: 0 5px 30px 0; display: inline-block"
-                            // >
-                            //   <img src="' . $baseUrl . '/instagram.png" alt="Instagram"
-                            // /></a>
-              
-                            // <a
-                            //   href="https://www.linkedin.com/"
-                            //   target="_blank"
-                            //   style="padding: 0 5px 30px 0; display: inline-block"
-                            // >
-                            //   <img src="' . $baseUrl . '/linkedin.png" alt="LinkedIn"
-                            // /></a>
-              
-                            // <a
-                            //   href="https://www.youtube.com/"
-                            //   target="_blank"
-                            //   style="padding: 0 5px 30px 0; display: inline-block"
-                            // >
-                            //   <img src="' . $baseUrl . '/youtube.png" alt="YouTube"
-                            // /></a>
                           </td>
                         </tr>
                       </tbody>
