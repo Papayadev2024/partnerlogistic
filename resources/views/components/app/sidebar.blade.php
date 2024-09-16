@@ -21,7 +21,7 @@
       </button>
       <!-- Logo -->
       <a class="block" href="{{ route('mensajes.index') }}">
-        <img src="{{asset('images/img/logosmo.png')}}" class="w-28"/>
+        <img src="{{asset('images/svg/image_5.svg')}}" class="w-28"/>
       </a>
     </div>
 
@@ -107,7 +107,7 @@
           </li>
 
           <!-- Servicios -->
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['servicios'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['servicios'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('servicios.index') }}">
@@ -124,7 +124,7 @@
                   class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Servicios</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
 
           <!-- Testimony -->
@@ -189,7 +189,7 @@
             </a>
           </li> --}}
 
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['logos'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['logos'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('logos.index') }}">
@@ -207,7 +207,7 @@
                   Cliente</span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
 
           {{-- <li
@@ -252,7 +252,7 @@
 
 
 
-          <li
+          {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['aboutus'])) {{ 'bg-slate-900' }} @endif">
             <a class="block text-slate-200 hover:text-white truncate transition duration-150 @if (in_array(Request::segment(2), ['aboutus'])) {{ 'hover:text-slate-200' }} @endif"
               href="{{ route('aboutus.index') }}">
@@ -270,7 +270,7 @@
                 </span>
               </div>
             </a>
-          </li>
+          </li> --}}
 
           {{-- <li
             class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 @if (in_array(Request::segment(2), ['attributes'])) {{ 'bg-slate-900' }} @endif">
