@@ -229,14 +229,14 @@
                                                         class="font-inter font-light text-text16 text-white cursor-pointer">Acepto
                                                         recibir comunicaciones</label>
                                                 </div>
-                                                <div class="flex justify-start items-center gap-1">
+                                                {{-- <div class="flex justify-start items-center gap-1">
                                                     <p class="font-inter font-light text-text16 text-white">
                                                         Al facilitar mis datos acepto la
                                                     </p>
                                                     <a href="#" target="_blank"
                                                         class="font-inter font-light text-text16 text-white underline">Política
                                                         de Privacidad</a>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                     </form>

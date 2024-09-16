@@ -151,7 +151,7 @@
                         title: response.message,
                         icon: "success",
                     }).then(function() {
-                        window.location.href = '{{ route('agradecimiento') }}';
+                        window.location.href = '{{ route('index') }}';
                     });
 
                     $('#formContactos')[0].reset();
