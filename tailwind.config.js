@@ -14,6 +14,11 @@ export default {
     darkMode: "class",
     theme: {
         extend: {
+            backgroundColor: {
+                primary: "#2C7393",
+                secondary: "#023B54",
+                paragraph: "#818B90",
+            },
             fontWeight: {
                 medium: "500",
                 regular: "400",
@@ -30,7 +35,7 @@ export default {
                 blue: "2px solid rgba(0, 112, 244, 0.5)",
             },
             fontFamily: {
-                archivo: ["Archivo", "sans-serif"],
+                inter: ["Inter", "sans-serif"],
             },
             fontSize: {
                 xs: ["0.75rem", { lineHeight: "1.5" }],
@@ -152,6 +157,11 @@ export default {
             },
             zIndex: {
                 60: "60",
+            },
+            textColor: {
+                primary: "#023B54",
+                secondary: "#FF7B29",
+                paragraph: "#818B90",
             },
         },
     },

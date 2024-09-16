@@ -14,25 +14,25 @@ class GeneralSeeder extends Seeder
     public function run(): void
     {
         General::create([
-            'address' => 'Av. Aramburu 1506',
-            'inside' => 'Oficina 404 - Piso 4',
-            'district' => 'Miraflores',
+            'address' => 'Av. Antonio Miroquesada 457',
+            'inside' => 'Ofic. 1301',
+            'district' => 'Magdalena del Mar',
             'schedule' => "De Lunes a Viernes de 9:00am a 6:00pm y Sábados de 9:00am a 1:00pm",
             'city' => 'Lima',
-            'country' => 'Perú',
-            'cellphone' => '555-555-123' ,
+            'country' => 'Lima - Perú',
+            'cellphone' => '(+51) 908 866 179' ,
             'office_phone' => '5555-1025' ,
-            'email' => 'usuario@mundoweb.pe',
+            'email' => 'info@pslgroup.pe',
             'facebook' => 'www.facebook.com',
             'instagram' => 'www.instagram.com',
-            'youtube' => 'www.youtube.com',
+            'youtube' => 'https://www.linkedin.com/',
             'twitter' => 'www.twitter.com',
-            'whatsapp' => '555-555-123' ,
-            'form_email' => 'usuario@mundoweb.pe',
+            'whatsapp' => '51908866179' ,
+            'form_email' => 'info@pslgroup.pe',
             'business_hours' => 'horas',
-            'mensaje_whatsapp' => 'Hola estamos atentos a lo que ud desee',
-            'htop' =>'Descubre los mejores productos y promociones en Deco Tab',
-            'aboutus' => 'Debo Tab es una empresa reconocida por su innovación y distinción en el mercado peruano. Nuestro equipo ofrece una colección de paneles de piedra cincelada, brindando a tus espacios una sensación de autenticidad y elegancia incomparables. Además, destacamos por la calidad de nuestros UV Mármol, Wall Panel Mix y piedra PU.'
+            'mensaje_whatsapp' => 'Hola, mi nombre es [Tu Nombre]. Quisiera recibir información acerca sus servicios . Estoy atento(a) a su respuesta.',
+            'htop' =>'El servicio lo es todo, nuestra gente lo hace posible.',
+            'aboutus' => 'En PARTNERS LOGISTICS nos encargamos de brindar soluciones integrales para las operaciones de comercio internacional, Posicionándonos en los cinco continentes gracias a la confianza y seguridad que brinda nuestra red de agentes y socios; si deseas hacer negocios en cualquier parte del mundo, somos tu mejor aliado.'
 
         ]);
     }

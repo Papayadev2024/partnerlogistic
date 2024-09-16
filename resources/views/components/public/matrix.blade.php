@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="">
-    <title> SMOConsultores </title>
+    <title> Partners Logistics Perú </title>
     <meta name="keywords"
         content="" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -30,9 +30,12 @@
 
     {{-- Sweet Alert --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    {{-- Sweet Alert --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
 </head>
 
 <body>
@@ -103,12 +106,12 @@
                 return;
             };
 
-            var valorSeleccionado = $('input[name="service_product"]:checked').val();
-            if (valorSeleccionado === "Tipo de servicios" || valorSeleccionado === undefined) {
-                alerta("Debe seleccionar un servicio")
-                return;
-            }
-
+            // var valorSeleccionado = $('input[name="service_product"]:checked').val();
+            // if (valorSeleccionado === "Tipo de servicios" || valorSeleccionado === undefined) {
+            //     alerta("Debe seleccionar un servicio")
+            //     return;
+            // }
+           
 
             Swal.fire({
 

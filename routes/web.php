@@ -27,6 +27,7 @@ use App\Http\Controllers\GalerieController;
 use App\Http\Controllers\LogosClientController;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\LibroReclamacionesController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\StaffController;
@@ -54,6 +55,12 @@ Route::get('/gestion/{id}', [IndexController::class, 'gestion'] )->name('gestion
 Route::get('/contacto', [IndexController::class, 'contacto'] )->name('contacto');
 Route::get('/agradecimiento', [IndexController::class, 'agradecimiento'] )->name('agradecimiento');
 Route::post('guardarContacto', [IndexController::class, 'guardarContacto'] )->name('guardarContacto');
+Route::get('/libro-de-reclamaciones', [IndexController::class, 'librodereclamaciones'])->name('librodereclamaciones');
+
+Route::post('guardarformulario', [LibroReclamacionesController::class, 'storePublic'])->name('guardarFormReclamo');
+
+Route::get('/obtenerProvincia/{departmentId}', [IndexController::class, 'obtenerProvincia'])->name('obtenerProvincia');
+Route::get('/obtenerDistritos/{provinceId}', [IndexController::class, 'obtenerDistritos'])->name('obtenerDistritos');
 /* Route::get('/nosotros', [IndexController::class, 'nosotros'] )->name('nosotros');
 Route::get('/servicios', [IndexController::class, 'servicios'] )->name('servicios');
 Route::get('/comentario', [IndexController::class, 'comentario'] )->name('comentario');
@@ -103,7 +110,9 @@ Route::middleware(['auth:sanctum', 'verified', 'can:Admin'])->group(function () 
         Route::post('/categorias/updateVisible', [CategoryController::class, 'updateVisible'] )->name('categorias.updateVisible');
         Route::get('/categorias/contarCategorias', [CategoryController::class, 'contarCategoriasDestacadas'] )->name('categorias.contarCategoriasDestacadas');
 
-
+        //Libro de reclamaciones
+        Route::resource('/reclamo', LibroReclamacionesController::class);
+        Route::post('/reclamo/borrar', [LibroReclamacionesController::class, 'borrar'])->name('reclamo.borrar');
 
         //Servicios
         Route::resource('/servicios', ServiceController::class);

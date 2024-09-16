@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string('email')->nullable();
             $table->string('phone')->nullable();
             $table->text('message')->nullable();
+            $table->string('ruc')->nullable();
             $table->string('service_product')->nullable();
+            $table->string('service_product_servicio')->nullable();
             $table->string('source')->nullable();
             $table->boolean('status')->default(true);
             $table->boolean('is_read')->default(false);

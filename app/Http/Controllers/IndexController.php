@@ -134,6 +134,17 @@ class IndexController extends Controller
         //
     }
 
+    public function obtenerProvincia($departmentId)
+    {
+      $provinces = DB::select('select * from provinces where active = ? and department_id = ? order by description', [1, $departmentId]);
+      return response()->json($provinces);
+    }
+  
+    public function obtenerDistritos($provinceId)
+    {
+      $distritos = DB::select('select * from districts where active = ? and province_id = ? order by description', [1, $provinceId]);
+      return response()->json($distritos);
+    }
     /**
      * Save contact from blade
      */
@@ -146,10 +157,9 @@ class IndexController extends Controller
             $reglasValidacion = [
                 /* 'name' => 'required|string|max:255', */
                 'email' => 'required|email|max:255',
-                /* 'phone' => 'required|string|max:99999999999', */
+                'phone' => 'required|string|max:99999999999',
             ];
             $mensajes = [
-                'full_name.required' => 'El campo nombre es obligatorio.',
                 'email.required' => 'El campo correo electrónico es obligatorio.',
                 'email.email' => 'El formato del correo electrónico no es válido.',
                 'email.max' => 'El campo correo electrónico no puede tener más de :max caracteres.',
@@ -158,8 +168,8 @@ class IndexController extends Controller
             ];
             $request->validate($reglasValidacion, $mensajes);
             $formlanding = Message::create($data);
-            $this->envioCorreoAdmin($formlanding);
-            $this->envioCorreoCliente($formlanding);
+            // $this->envioCorreoAdmin($formlanding);
+            // $this->envioCorreoCliente($formlanding);
 
             return response()->json(['message' => 'Mensaje enviado con exito']);
         } catch (ValidationException $e) {
@@ -178,11 +188,20 @@ class IndexController extends Controller
         $img->save($route . $nombreImagen);
     }
 
+    public function librodereclamaciones()
+    {
+      $departamentofiltro = DB::select('select * from departments where active = ? order by 2', [1]);
+  
+      return view('public.librodereclamaciones', compact('departamentofiltro'));
+    }
+
     
     private function envioCorreoAdmin($data)
-    {
+    {   
+        $emailadmin = General::first();
+        
         $name = "Administrador";
-        $mensaje = "tienes un nuevo mensaje - SMO Consultores";
+        $mensaje = "tienes un nuevo mensaje - Partners Logistics Perú";
         $mail = EmailConfig::config($name, $mensaje);
         $emailadmin = "diego.martinez.r@tecsup.edu.pe";
         $baseUrl = 'https://' . $_SERVER['HTTP_HOST'] . '/mail';
@@ -358,7 +377,7 @@ class IndexController extends Controller
     private function envioCorreoCliente($data)
     {
         $name = $data['full_name'];
-        $mensaje = "Gracias por comunicarte con SMO Consultores";
+        $mensaje = "Gracias por comunicarte con Partners Logistics Perú";
         $mail = EmailConfig::config($name, $mensaje);
         $baseUrl = 'https://' . $_SERVER['HTTP_HOST'] . '/mail';
         $baseUrllink = 'https://' . $_SERVER['HTTP_HOST'] . '/';
