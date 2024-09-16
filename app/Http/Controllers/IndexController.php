@@ -168,8 +168,8 @@ class IndexController extends Controller
             ];
             $request->validate($reglasValidacion, $mensajes);
             $formlanding = Message::create($data);
-            // $this->envioCorreoAdmin($formlanding);
-            // $this->envioCorreoCliente($formlanding);
+            $this->envioCorreoAdmin($formlanding);
+            $this->envioCorreoCliente($formlanding);
 
             return response()->json(['message' => 'Mensaje enviado con exito']);
         } catch (ValidationException $e) {
@@ -268,7 +268,7 @@ class IndexController extends Controller
                           <td>
                             <p
                               style="
-                                color: #ffffff;
+                                color: #0D3244;
                                 font-size: 40px;
                                 line-height: 60px;
                                 font-family: Montserrat, sans-serif;
@@ -276,7 +276,7 @@ class IndexController extends Controller
                               "
                             >
                               ¡Nuevo
-                              <span style="color: #ffffff">mensaje!</span>
+                              <span style="color: #0D3244">mensaje!</span>
                             </p>
                           </td>
                         </tr>          
@@ -284,7 +284,7 @@ class IndexController extends Controller
                           <td>
                             <p
                               style="
-                                color: #ffffff;
+                                color: #0D3244;
                                 font-weight: 500;
                                 font-size: 18px;
                                 text-align: center;
@@ -306,7 +306,7 @@ class IndexController extends Controller
                               href="'. $baseUrllink . '"
                               style="
                                 text-decoration: none;
-                                background-color: #33BF82;
+                                background-color: #FF7B29;
                                 color: white;
                                 padding: 16px 20px;
                                 display: inline-flex;
@@ -444,7 +444,7 @@ class IndexController extends Controller
                           <td>
                             <p
                               style="
-                                color: #ffffff;
+                                color: #0D3244;
                                 font-size: 40px;
                                 line-height: 60px;
                                 font-family: Montserrat, sans-serif;
@@ -452,7 +452,7 @@ class IndexController extends Controller
                               "
                             >
                               ¡Gracias
-                              <span style="color: #ffffff">por escribirnos!</span>
+                              <span style="color: #0D3244">por escribirnos!</span>
                             </p>
                           </td>
                         </tr>          
@@ -460,7 +460,7 @@ class IndexController extends Controller
                           <td>
                             <p
                               style="
-                                color: #ffffff;
+                                color: #0D3244;
                                 font-weight: 500;
                                 font-size: 18px;
                                 text-align: center;
@@ -482,7 +482,7 @@ class IndexController extends Controller
                               href="'. $baseUrllink . '"
                               style="
                                 text-decoration: none;
-                                background-color: #33BF82;
+                                background-color: #FF7B29;
                                 color: white;
                                 padding: 16px 20px;
                                 display: inline-flex;
