@@ -143,166 +143,142 @@ class LibroReclamacionesController extends Controller
         $appUrl = config('app.url');
         $appName = config('app.name');
         $name = $data['fullname'];
-        $mensaje = "Tu reclamo ha sido recepcionado";
+        $mensaje = "Tu reclamo ha sido recepcionado - Partners Logistics Perú";
         $mail = EmailConfig::config($name, $mensaje);
+        $baseUrl = 'https://' . $_SERVER['HTTP_HOST'] . '/mail';
+        $baseUrllink = 'https://' . $_SERVER['HTTP_HOST'] . '/';
         try {
-            $mail->addAddress($data['email']);
-            $mail->Body = '<html lang="es">
-            <head>
-              <meta charset="UTF-8" />
-              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              <title>.'.$appName.'.</title>
-              <link rel="preconnect" href="https://fonts.googleapis.com" />
-              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-              <link
-                href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-                rel="stylesheet"
-              />
-              <style>
-                * {
-                  margin: 0;
-                  padding: 0;
-                  box-sizing: border-box;
-                }
-              </style>
-            </head>
-            <body>
-              <main>
-                <table
-                  style="
-                    width: 600px;
-                    height: 700px;
-                    margin: 0 auto;
-                    text-align: center;
-                   background-image:url(' . $appUrl . 'images/Ellipse_18.png),  url(' . $appUrl . 'images/Tabpanel.png);
-                  background-repeat: no-repeat, no-repeat;
-                  background-position: center bottom , center bottom;;
-                  background-size: fit , fit;
-                  background-color: #f9f9f9;
-                  "
-                >
-                  <thead>
-                    <tr>
-                      <th
-                        style="
-                          display: flex;
-                          flex-direction: row;
-                          justify-content: center;
-                          align-items: center;
-                          margin: 40px;
-                        "
-                      >
-                          <img src="' . $appUrl . 'images/Group1.png" alt="mundo web"  style="
-                    margin: auto;
-                  "/>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style="height: 10px">
-                        <p
-                          style="
-                            color: #ffffff;
-                            font-weight: 500;
-                            font-size: 18px;
-                            text-align: center;
-                            width: 500px;
-                            margin: 0 auto;
-                            font-family: Montserrat, sans-serif;
-                            line-height: 30px;
-                          "
-                        >
-                          <span style="display: block">Hola </span>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="height: 10px">
-                        <p
-                          style="
-                            color: #ffffff;
-                            font-size: 40px;
-                            font-family: Montserrat, sans-serif;
-                            line-height: 60px;
-                          "
-                        >
-                          <span style="display: block">' . $name . ' </span>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="height: 10px">
-                        <p
-                          style="
-                            color: #006BF6;
-                            font-size: 40px;
-                            font-family: Montserrat, sans-serif;
-                            font-weight: bold;
-                            line-height: 60px;
-                          "
-                        >
-                          !Gracias
-                          <span style="color: #ffffff">por escribirnos!</span>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="height: 10px">
-                        <p
-                          style="
-                            color: #ffffff;
-                            font-weight: 500;
-                            font-size: 18px;
-                            text-align: center;
-                            width: 250px;
-                            margin: 0 auto;
-                            font-family: Montserrat, sans-serif;
-                            line-height: 30px;
-                          "
-                        >
-                          En breve estaremos comunicandonos contigo.
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                    <td
-                      style="
+          $mail->addAddress($data['email']);
+          $mail->Body =
+              '
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Credito Mype Credito</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link
+                  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+                  rel="stylesheet"
+                />
+                <style>
+                  @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+                  * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                  }
+                  body {
+                    font-family: Montserrat, sans-serif;
+                  }
+                </style>
+              </head>
+              <body>
+                <main>
+                  <table
+                    style="
+                      width: 600px;
+                      margin: 0 auto;
                       text-align: center;
+                      background-image: url(' . $baseUrl . '/fondo.png);
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: cover;
                     "
-                    >
-                         <a
-                      href="' . $appUrl . '"
-                      style="
-                        text-decoration: none;
-                        background-color: #006bf6;
-                        color: white;
-                        padding: 10px 16px;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 10px;
-                        font-weight: 600;
-                        font-family: Montserrat, sans-serif;
-                        font-size: 16px;
-                        border-radius: 30px;
-                      "
-                    >
-                      <span>Visita nuestra web</span>
-                    </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </main>
-            </body>
-          </html>
-          ';
-            $mail->isHTML(true);
-            $mail->send();
-            
-        } catch (\Throwable $th) {
-            //throw $th;
-        }  
+                  >
+                    <thead>
+                      <tr>
+                        <th
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 20px auto;
+                            padding: 0 200px;
+                            text-align:center;
+                          "
+                        >
+                          <a href="'. $baseUrllink . '" target="_blank" style="text-align:center" ><img src="' . $baseUrl . '/logo.png" alt="creditomype" /></a>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p
+                            style="
+                              color: #0D3244;
+                              font-size: 40px;
+                              line-height: 60px;
+                              font-family: Montserrat, sans-serif;
+                              font-weight: bold;
+                            "
+                          >
+                            ¡Hemos recepcionado 
+                            <span style="color: #0D3244">tu solicitud!</span>
+                          </p>
+                        </td>
+                      </tr>          
+                      <tr>
+                        <td>
+                          <p
+                            style="
+                              color: #0D3244;
+                              font-weight: 500;
+                              font-size: 18px;
+                              text-align: center;
+                              width: 500px;
+                              margin: 0 auto;
+                              padding: 30px 0;
+                              font-family: Montserrat, sans-serif;
+                            "
+                          >
+                            Hola ' . $name . '<br>
+                            Pronto estaremos comunicandonos contigo.
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <a
+                            target="_blank"
+                            href="'. $baseUrllink . '"
+                            style="
+                              text-decoration: none;
+                              background-color: #FF7B29;
+                              color: white;
+                              padding: 16px 20px;
+                              display: inline-flex;
+                              justify-content: center;
+                              border-radius: 10px;
+                              align-items: center;
+                              gap: 10px;
+                              font-weight: 600;
+                              font-family: Montserrat, sans-serif;
+                              font-size: 16px;
+                              margin-bottom: 350px;
+                            "
+                          >
+                            <span>Visita nuestra web</span>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                       <td>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </main>
+              </body>
+            </html>
+            ';
+          $mail->isHTML(true);
+          $mail->send();
+      } catch (\Throwable $th) {
+          //throw $th;
+      }
       }
 }

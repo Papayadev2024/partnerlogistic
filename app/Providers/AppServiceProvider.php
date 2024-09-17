@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\General;
+use App\Models\LibroReclamaciones;
 use App\Models\Message;
 use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Pagination\Paginator as PaginationPaginator;
@@ -42,7 +43,9 @@ class AppServiceProvider extends ServiceProvider
             // Obtener los datos del footer
             $mensajes = Message::where('is_read', '!=', 1 )->where('status', '!=', 0)->count(); // Suponiendo que tienes un modelo Footer y un método footerData() en él
             // Pasar los datos a la vista
-            $view->with('mensajes', $mensajes);
+            $reclamos = LibroReclamaciones::where('is_read', '!=', 1 )->where('status', '!=', 0)->count();
+            $view->with('mensajes', $mensajes)
+                 ->with('reclamos',$reclamos);
         });
         
          PaginationPaginator::useTailwind();   
