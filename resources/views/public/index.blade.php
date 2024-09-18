@@ -688,7 +688,7 @@
 
         @if ($certificados->isEmpty())
         @else
-            <section class="pt-0 pb-20">
+            <section class="pt-0 pb-20" id="tarifarios">
                 <div class="w-11/12 mx-auto">
                     <div class="w-full md:max-w-[1000px] mx-auto flex flex-col gap-16 py-20">
                         <div class="flex flex-col gap-2">
