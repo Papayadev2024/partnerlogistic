@@ -20,6 +20,7 @@ use App\Models\Specifications;
 use App\Models\ClientLogos;
 use App\Models\Service;
 use App\Models\AboutUs;
+use App\Models\Certificados;
 use App\Models\User;
 use App\Models\UserDetails;
 use Illuminate\Http\Request;
@@ -47,8 +48,8 @@ class IndexController extends Controller
         $general = General::all()->first();
         $servicios = Service::where('status', 1)->where('visible', 1)->get();
         $logos = ClientLogos::where('status', '=', 1)->get();
-
-        return view('public.index', compact('general', 'logos', 'servicios'));
+        $certificados = Certificados::where('status', '=', 1)->where('visible', '=', 1)->get();
+        return view('public.index', compact('general', 'logos', 'servicios', 'certificados'));
     }
 
     public function nosotros()

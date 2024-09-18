@@ -94,7 +94,7 @@
             <a href="{{route('index')}}"><img src="{{ asset('images/img/image_3.png') }}" alt="Partners Logistic Peru" class="w-full" /></a>
         </div>
         <div class="flex justify-center items-center w-full md:w-auto gap-5">
-            <a target="_blank" href="https://miranda-soft.com.pe/tools/portal/login.php"
+            <a target="_blank" href="https://miranda-soft.com.pe/project/seguimiento-orden.php"
             class="bg-[#FF7B29] text-white font-inter font-semibold text-text16 rounded-xl py-3 px-5 w-full md:w-auto text-center">Trazabilidad</a>
             
             <a target="_blank" href="https://api.whatsapp.com/send?phone={{$datosgenerales[0]->whatsapp}}&text={{$datosgenerales[0]->mensaje_whatsapp}}"

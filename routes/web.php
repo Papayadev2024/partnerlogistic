@@ -21,6 +21,7 @@ use App\Http\Controllers\TestimonyController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CarritoController;
+use App\Http\Controllers\CertificadosController;
 use App\Http\Controllers\FaqsController;
 use App\Http\Controllers\FooterController;
 use App\Http\Controllers\GalerieController;
@@ -104,6 +105,11 @@ Route::middleware(['auth:sanctum', 'verified', 'can:Admin'])->group(function () 
         Route::post('/testimonios/deleteTestimony', [TestimonyController::class, 'deleteTestimony'] )->name('testimonios.deleteTestimony');
         Route::post('/testimonios/updateVisible', [TestimonyController::class, 'updateVisible'] )->name('testimonios.updateVisible');
 
+        //Certificados
+        Route::resource('/certificados', CertificadosController::class);
+        Route::post('/certificados/deleteCertificado', [CertificadosController::class, 'deleteCerticado'])->name('certificados.deleteCertificado');
+        Route::post('/certificados/updateVisible', [CertificadosController::class, 'updateVisible'])->name('certificados.updateVisible');
+        
         //Categorías
         Route::resource('/categorias', CategoryController::class);
         Route::post('/categorias/deleteCategory', [CategoryController::class, 'deleteCategory'] )->name('categorias.deleteCategory');

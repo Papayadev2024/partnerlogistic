@@ -287,7 +287,7 @@
                 </div>
 
                 <div class="flex flex-col gap-5 basis-1/2 w-full md:max-w-[540px] mx-auto justify-center">
-                    <h2 class="text-primary leading-tight font-inter font-semibold text-text40">
+                    <h2 class="text-primary leading-tight font-inter font-black text-text40">
                         Tus importaciones y exportaciones
                         <span class="text-secondary"> en las mejores manos?</span>
                     </h2>
@@ -309,7 +309,7 @@
 
         <section class="bg-[#F8F8F8] py-10 md:py-20">
             <div class="w-11/12 mx-auto flex flex-col gap-10">
-                <h3 class="text-[#023B54] font-inter font-semibold text-text40 leading-tight text-center">
+                <h3 class="text-[#023B54] font-inter font-black text-text40 leading-tight text-center">
                     Características <span class="text-[#FF7B29]">del servicio</span>
                 </h3>
 
@@ -423,7 +423,7 @@
 
                             <div>
                                 <h3
-                                    class="text-[#023B54] font-inter font-semibold text-text32 group-hover:text-white md:duration-300">
+                                    class="text-[#023B54]  font-inter font-semibold text-text32 group-hover:text-white md:duration-300">
                                     Eficiencia en el seguimiento
                                 </h3>
                                 <p
@@ -603,7 +603,7 @@
         <section>
             <div class="grid grid-cols-1 md:grid-cols-2 w-11/12 mx-auto gap-10 md:gap-24 py-20">
                 <div class="order-2 md:order-1 flex flex-col gap-10 w-full md:max-w-[652px]">
-                    <h3 class="font-semibold font-inter text-text40 text-[#023B54] leading-tight text-center md:text-left">
+                    <h3 class="font-black font-inter text-text40 text-[#023B54] leading-tight text-center md:text-left">
                         Beneficio <span class="text-[#FF7B29]">del servicio</span>
                     </h3>
 
@@ -684,6 +684,49 @@
                 </div>
             </div>
         </section>
+
+
+        @if ($certificados->isEmpty())
+        @else
+            <section class="pt-0 pb-20">
+                <div class="w-11/12 mx-auto">
+                    <div class="w-full md:max-w-[1000px] mx-auto flex flex-col gap-16 py-20">
+                        <div class="flex flex-col gap-2">
+                            <h2
+                                class="text-[#023B54] font-inter font-black text-text40 text-center leading-tight">
+                                Nuestros <span class="text-[#FF7B29]">tarifarios</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20">
+                        @foreach ($certificados as $descargable)
+                            <div class="flex justify-start items-center gap-4 h-[100px]">
+                                <div class="rounded-xl flex justify-center items-center w-2/5 h-full ">
+                                    <img src="{{ asset('images/img/sobresalir.png') }}" alt="catalogo"
+                                        class="w-[100px] md:w-[150px] h-[100px] object-contain object-right">
+                                </div>
+                                <div class="flex flex-col gap-4 w-3/5">
+                                    <div class="flex flex-col gap-2">
+                                        <h2 class="text-[#082252] font-roboto font-bold text-text18 leading-tight">
+                                            {{$descargable->title}}</h2>
+                                    </div>
+
+                                    <a href="{{ asset('storage/archives/'.$descargable->name_archive) }}" target="_blank" 
+                                        class="text-[#FF5E14] font-roboto font-normal text-text10 md:text-text16 flex justify-start items-center gap-2">
+                                        <span>Descargar</span>
+                                        <div>
+                                            <img src="{{ asset('images/img/descargarimg.png') }}" alt="download"
+                                                class="w-[25px] h-auto">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+        @endif
+
 
         <section>
             <div class="relative w-11/12 mx-auto py-10 md:pt-10 md:pb-20">
