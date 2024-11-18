@@ -1,9 +1,14 @@
 <footer class="bg-[#00557B]">
     <div class="w-11/12 mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-start pt-20 gap-10">
-        <div class="flex justify-start items-center">
+        <div class="flex flex-col justify-start items-center">
             <a href="#">
                 <img src="./images/svg/image_5.svg" alt="Partners Logistic Peru" />
             </a>
+            
+            <p class="font-inter font-bold text-text14 text-white">Jurisdicciones</p>  
+            <p class="text-white text-opacity-75 font-inter font-normal text-text14">
+                Callao, Chancay,  Chimbote, Ilo, Mollendo/Matarin, Paita, Pisco
+            </p>
         </div>
 
         <div class="flex flex-col md:flex-row md:justify-between gap-10 md:gap-24 items-start">
