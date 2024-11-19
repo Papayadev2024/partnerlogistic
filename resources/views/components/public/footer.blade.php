@@ -11,7 +11,7 @@
                 <li>Chancay</li>
                 <li>Chimbote</li>
                 <li>Ilo</li>
-                <li>Mollendo/Matarin</li>
+                <li>Mollendo/Matarani</li>
                 <li>Paita</li>
                 <li>Pisco</li>
             </ul>
