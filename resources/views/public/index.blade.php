@@ -572,6 +572,20 @@
                                     170 países, garantizando una amplia cobertura geográfica.
                                 </p>
                             </div>
+
+                            <div>
+                                <h3
+                                    class="text-[#023B54] font-inter font-semibold text-text32 group-hover:text-white md:duration-300">
+                                    Transporte Marítimo con Partners Logistics Perú S.A.C.
+                                </h3>
+                                <p
+                                    class="text-[#818B90] font-inter font-light text-text18 group-hover:text-white md:duration-300">
+                                    Ofrecemos soluciones seguras y eficientes para envíos internacionales, tanto FCL como LCL, asegurando 
+                                    puntualidad, reduciendo costos, y optimizando la logística de tus productos.  
+                                    Garantizamos tarifas competitivas, espacio disponible y acceso a rutas comerciales globales. 
+                                    Confía en nosotros para llevar tu carga a cualquier destino del mundo con seguridad y flexibilidad.
+                                </p>
+                            </div>
                         </div>
                         {{-- <div>
                             <a href="#"
