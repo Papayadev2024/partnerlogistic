@@ -309,11 +309,13 @@
 
         <section class="bg-[#F8F8F8] py-10 md:py-20">
             <div class="w-11/12 mx-auto flex flex-col gap-10">
+                
                 <h3 class="text-[#023B54] font-inter font-black text-text40 leading-tight text-center">
                     Características <span class="text-[#FF7B29]">del servicio</span>
                 </h3>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    
                     <div class="flex flex-col gap-4 group bg-white hover:bg-[#FF7B29] p-6 rounded-xl">
                         <div class="flex flex-col gap-2">
                             <div>
@@ -697,12 +699,12 @@
                 </div>
             </div>
 
-                <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center">
                     <a href="#formContactos"
                         class="font-inter font-bold text-text18 text-white bg-[#FF7B29] rounded-[8px] py-4 px-6">Quiero una
                         cotización</a>
-                </div>
             </div>
+            
         </section>
 
         <section>
