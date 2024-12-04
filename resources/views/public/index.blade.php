@@ -699,10 +699,11 @@
                 </div>
             </div>
 
-            <div class="flex justify-center items-center">
-                    <a href="#formContactos"
+            <div class="flex justify-center items-center mt-5">
+                <a href="#formContactos"
                         class="font-inter font-bold text-text18 text-white bg-[#FF7B29] rounded-[8px] py-4 px-6">Quiero una
-                        cotización</a>
+                        cotización
+                </a>
             </div>
             
         </section>
