@@ -706,7 +706,7 @@
                             </h3>
                             <p
                                 class="text-[#818B90] font-inter font-light text-text18 group-hover:text-white md:duration-300">
-                                Less than Container Load (LCL), concepto utilizado en transporte marítimo, cuyo significado es “carga inferior al contenedor”. Se refiere a la situación cuando el volumen de carga que exportamos es pequeño y no requiere de todo el espacio que ofrece un contenedor. Por lo que solo se contrata un espacio utilizanco la unidad de medida “m3”
+                                Concepto utilizado en transporte marítimo, cuyo significado es “carga inferior al contenedor”. Se refiere a la situación cuando el volumen de carga que exportamos es pequeño y no requiere de todo el espacio que ofrece un contenedor. Por lo que solo se contrata un espacio utilizanco la unidad de medida “m3”
                             </p>
                         </div>
                     </div>
