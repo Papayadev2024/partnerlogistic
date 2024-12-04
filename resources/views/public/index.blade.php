@@ -637,7 +637,97 @@
                             </a>
                         </div> --}}
                     </div>
+
+                    <div class="flex flex-col gap-4 group bg-white hover:bg-[#FF7B29] p-6 rounded-xl">
+                        <div class="flex flex-col gap-2">
+                            <div>
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.83203 28.0007C5.83203 17.5512 5.83203 12.3265 9.07826 9.08021C12.3245 5.83398 17.5492 5.83398 27.9987 5.83398C38.4481 5.83398 43.6729 5.83398 46.9192 9.08021C50.1654 12.3265 50.1654 17.5512 50.1654 28.0007C50.1654 38.45 50.1654 43.6748 46.9192 46.9212C43.6729 50.1673 38.4481 50.1673 27.9987 50.1673C17.5492 50.1673 12.3245 50.1673 9.07826 46.9212C5.83203 43.6748 5.83203 38.45 5.83203 28.0007Z"
+                                        fill="#FF7B29" fill-opacity="0.4" stroke="#FF7B29" stroke-width="3.5"
+                                        class="group-hover:stroke-strokeWithe group-hover:fill-fillWhite md:duration-300" />
+                                    <path d="M18.668 29.1667L24.5013 35L37.3346 21" stroke="#FF7B29" stroke-width="3.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="group-hover:stroke-strokeWithe md:duration-300" />
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3
+                                    class="text-[#023B54] font-inter font-semibold text-text32 group-hover:text-white md:duration-300">
+                                    Full Container Load ( FCL)
+                                </h3>
+                                <p
+                                    class="text-[#818B90] font-inter font-light text-text18 group-hover:text-white md:duration-300">
+                                    Término utilizado en transporte marítimo para describir el uso total de un contenedor para una sola empresa. Es decir, si un exportador tiene suficiente mercancía para llenar un contenedor, utilizará un Full Container Load para su exportación. Puede ser FCL 20' & 40'.
+                                </p>
+                            </div>
+                        </div>
+                        {{-- <div>
+                            <a href="#"
+                                class="font-inter font-medium text-text16 text-[#FF7B29] flex justify-start items-center gap-2 group-hover:text-white md:duration-300">
+                                <span>Más Información</span>
+                                <div>
+                                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.88628 1.33334L12.3307 6.00001M12.3307 6.00001L7.88628 10.6667M12.3307 6.00001L1.66406 6.00001"
+                                            stroke="#FF7B29" stroke-width="1.6" stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="group-hover:stroke-strokeWithe md:duration-300" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div> --}}
+                    </div>
                 </div>
+
+
+                <div class="flex flex-col gap-4 group bg-white hover:bg-[#FF7B29] p-6 rounded-xl">
+                    <div class="flex flex-col gap-2">
+                        <div>
+                            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.83203 28.0007C5.83203 17.5512 5.83203 12.3265 9.07826 9.08021C12.3245 5.83398 17.5492 5.83398 27.9987 5.83398C38.4481 5.83398 43.6729 5.83398 46.9192 9.08021C50.1654 12.3265 50.1654 17.5512 50.1654 28.0007C50.1654 38.45 50.1654 43.6748 46.9192 46.9212C43.6729 50.1673 38.4481 50.1673 27.9987 50.1673C17.5492 50.1673 12.3245 50.1673 9.07826 46.9212C5.83203 43.6748 5.83203 38.45 5.83203 28.0007Z"
+                                    fill="#FF7B29" fill-opacity="0.4" stroke="#FF7B29" stroke-width="3.5"
+                                    class="group-hover:stroke-strokeWithe group-hover:fill-fillWhite md:duration-300" />
+                                <path d="M18.668 29.1667L24.5013 35L37.3346 21" stroke="#FF7B29" stroke-width="3.5"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="group-hover:stroke-strokeWithe md:duration-300" />
+                            </svg>
+                        </div>
+
+                        <div>
+                            <h3
+                                class="text-[#023B54] font-inter font-semibold text-text32 group-hover:text-white md:duration-300">
+                                Less than Container Load (LCL)
+                            </h3>
+                            <p
+                                class="text-[#818B90] font-inter font-light text-text18 group-hover:text-white md:duration-300">
+                                Less than Container Load (LCL), concepto utilizado en transporte marítimo, cuyo significado es “carga inferior al contenedor”. Se refiere a la situación cuando el volumen de carga que exportamos es pequeño y no requiere de todo el espacio que ofrece un contenedor. Por lo que solo se contrata un espacio utilizanco la unidad de medida “m3”
+                            </p>
+                        </div>
+                    </div>
+                    {{-- <div>
+                        <a href="#"
+                            class="font-inter font-medium text-text16 text-[#FF7B29] flex justify-start items-center gap-2 group-hover:text-white md:duration-300">
+                            <span>Más Información</span>
+                            <div>
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.88628 1.33334L12.3307 6.00001M12.3307 6.00001L7.88628 10.6667M12.3307 6.00001L1.66406 6.00001"
+                                        stroke="#FF7B29" stroke-width="1.6" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="group-hover:stroke-strokeWithe md:duration-300" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div> --}}
+                </div>
+            </div>
 
                 <div class="flex justify-center items-center">
                     <a href="#formContactos"
