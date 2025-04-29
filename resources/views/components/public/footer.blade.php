@@ -44,12 +44,17 @@
                                 @endif
                             </p>
 
+                            <p class="font-inter font-bold text-base text-white mt-3">Contacto</p>
                             <p class="text-white text-opacity-75 font-inter font-normal text-text14">
-                                info@pslgroup.pe
+                                <a href="{{asset('archives/catilla_basc.pdf')}}" download>Cartilla BASC</a>
+                            </p>
+                            <p class="text-white text-opacity-75 font-inter font-normal text-text14">
+                                <a href="{{asset('archives/politicas_basc.pdf')}}" download>Política de Gestión en Control y Seguridad</a>
                             </p>
                         </div>
                     </div>
                 </div>
+                <p class="font-inter font-bold text-base text-white mt-3">Programas BASC</p>
             </div>
         </div>
 
@@ -78,14 +83,13 @@
             @endif
         </div>
 
-
-
         <div>
             <a href="#" target="_blank"
                 class="text-white text-opacity-75 font-inter font-medium text-text12flex flex-col justify-end">
                 <span class="block">&copy; 2024 - Mundo Web - All Rights Reserved</span>
             </a>
         </div>
+
     </div>
 </footer>
 
