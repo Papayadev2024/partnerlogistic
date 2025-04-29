@@ -44,17 +44,16 @@
                                 @endif
                             </p>
 
-                            <p class="font-inter font-bold text-base text-white mt-3">Contacto</p>
+                            <p class="font-inter font-bold text-base text-white mt-3">Programas BASC</p>
                             <p class="text-white text-opacity-75 font-inter font-normal text-text14">
-                                <a href="{{asset('archives/catilla_basc.pdf')}}" download>Cartilla BASC</a>
+                                <a target="_blank" href="{{asset('archives/catilla_basc.pdf')}}" download>Cartilla BASC</a>
                             </p>
                             <p class="text-white text-opacity-75 font-inter font-normal text-text14">
-                                <a href="{{asset('archives/politicas_basc.pdf')}}" download>Política de Gestión en Control y Seguridad</a>
+                                <a target="_blank" href="{{asset('archives/politicas_basc.pdf')}}" download>Política de Gestión en Control y Seguridad</a>
                             </p>
                         </div>
                     </div>
                 </div>
-                <p class="font-inter font-bold text-base text-white mt-3">Programas BASC</p>
             </div>
         </div>
 
